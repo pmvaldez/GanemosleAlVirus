@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from './Navbar'
 import HomeGAV from './Home-GAV'
+import Team from './Team'
 
 const Home = () => {
     return (
         <div>
             <Navbar/>
             <HomeGAV/>
-            <h1>SOY EL HOME</h1> 
+            <Team />
         </div>
     )
 }
