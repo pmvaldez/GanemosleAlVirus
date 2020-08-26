@@ -5,6 +5,7 @@ import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
 import {Button, Modal} from 'react-bootstrap'
 import '../styles/team.css'
+import { Link } from "react-router-dom";
 
 
 const Team = () => {
@@ -15,6 +16,33 @@ const Team = () => {
 
     return (
         <Fragment>
+
+        <div className="containerButtons">  
+             <div className="containerBtns">
+                <div className="containerAllBtn">
+                    <Link to="/levelOne" className="link" >
+                        <button className="btnOne">
+                            <h4 className="tittleBtn">Etapa 1</h4>                            
+                        </button>
+                    </Link>
+                </div>
+                <div className="containerAllBtn">
+                    <Link  to="/levelTwo" className="link">
+                        <button className="btnTwo">
+                            <h4 className="tittleBtn">Etapa 2</h4>                            
+                        </button>
+                    </Link>
+                </div>
+                <div className="containerAllBtn">
+                    <Link to="/levelThree" className="link">
+                        <button className="btnThree">
+                            <h4 className="tittleBtn">Etapa 3</h4>                            
+                        </button>
+                    </Link>
+                </div>
+            </div>  
+         </div>    
+
         <div className="sectionTeam">
             <h1 className="text-center">Conoce al Escuadron Prevención</h1>
             <div className="containerTeam">
@@ -55,8 +83,13 @@ const Team = () => {
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti vel numquam, rem iure eos rerum ipsam? At, cumque? Quo debitis voluptatibus error assumenda obcaecati rem dolorem nemo unde at?</p>
                 <a href="#Modal" rel="modal:close" className="btn-info btn">Close</a>
             </div> */}
-        </div>         
+        </div>       
+
+       
+  
+
         </Fragment>
+        
     )
 }
 

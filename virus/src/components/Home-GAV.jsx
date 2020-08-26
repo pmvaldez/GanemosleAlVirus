@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/home-gav.css';
 import logoGAV from '../img/GAV_logo.png';
 
+
 const HomeGAV = () => {
     return (
       <div className="sectionGAV">
