@@ -9,7 +9,6 @@ const Buttons = () => {
         <Fragment>
 
         <div className="containerButtons">  
-             <div className="containerBtns">
                 <div className="containerAllBtn">
                     <Link to="/levelOne" className="link" >
                         <button className="btnOne">
@@ -31,7 +30,6 @@ const Buttons = () => {
                         </button>
                     </Link>
                 </div>
-            </div>  
          </div>    
 
        
