@@ -1,4 +1,4 @@
-import React, { Component} from 'react'
+import React, { Component, Fragment} from 'react'
 import tomask from '../img/tomask.png'
 import wantini from '../img/wantini.png'
 import puma from '../img/puma.png'
@@ -8,6 +8,8 @@ import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBConta
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
+ 
+
 
 
 class ModalPage extends Component {
@@ -55,9 +57,9 @@ render() {
                 <MDBBtn color="secondary" onClick={this.toggle(2)}>cerrar</MDBBtn>
             </MDBModalFooter>
     </MDBModal>
-    </MDBContainer>
+    </MDBContainer>    
   );
-  }
+  }  
 }
 
 
