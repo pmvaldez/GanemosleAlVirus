@@ -19,24 +19,8 @@
     margin-left: 20px;
 }
 
-/* .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: transparent !important;
-    border-color: transparent !important; 
-    border: none !important; 
-} */
-/* 
-@media (max-width: 1000px) {
-    .containerTeam {
-        margin-top: 11em;
-    }
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
 
-}
-
-
-@media (max-width: 450px) {
-    .containerTeam {
-        margin-top: 9em;
-    }
-
-
-  } */
