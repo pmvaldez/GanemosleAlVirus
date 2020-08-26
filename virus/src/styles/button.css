@@ -1,28 +1,18 @@
+@font-face{
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueLTStd-Bd.otf');
+}
+
 .containerButtons{
-    width: 100%;
+    width: 99%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
     margin-top: 50px;
+    position: fixed;
+    top:107px;
+    left: 10px;
 }
-    .containerBtns{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-items: center;
-        background: rgba(255, 255, 255, 0.78);
-        border-radius: 12px 12px 0px 0px;
-        width: 85%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    .containerAllBtn{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 200px;
-        height: 150px;
-        border-radius: 100px;
-    }
         .btnOne,
         .btnTwo,
         .btnThree{      
@@ -30,13 +20,12 @@
             height:150px;            
             margin: 5px;
             padding:10px;
-            -webkit-border-radius: 100px;
-            -moz-border-radius: 100px;
-            border-radius: 100px;
+            border-radius: 100px; 
+            border: none; 
             font-size:11px;
             line-height:32px;
             text-transform: uppercase;
-            float:left;            
+            float:right;            
         }
         .link{
             text-decoration:none;
@@ -46,15 +35,7 @@
         .containerAllBtn:hover .btnThree{
             transform:scale(1.2);
         }   
-        .btnOne{
-            float: right;
-        }
-        .btnTwo{
-            float: right;
-        }
-        .btnThree{
-            float: right;
-        }     
+  
         .btnOne{
             background: #FDD109;
         }
@@ -65,14 +46,13 @@
             background: #FF508C;
         }
             .tittleBtn{
-                font-family: 'Open Sans';
+                font-family: 'Helvetica';
                 font-style: normal;
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 33px;
                 text-align: center;
                 margin: 0;
-                
                 color: #FFFFFF;
             }
             

@@ -1,4 +1,4 @@
-import React, { Component, Fragment} from 'react'
+import React, { Component} from 'react'
 import tomask from '../img/tomask.png'
 import wantini from '../img/wantini.png'
 import puma from '../img/puma.png'
