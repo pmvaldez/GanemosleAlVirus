@@ -5,8 +5,7 @@ import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
 import {Button, Modal} from 'react-bootstrap'
 import '../styles/team.css'
-import { Link } from "react-router-dom";
-
+import Buttons from './Buttons'
 
 const Team = () => {
     const [show, setShow] = React.useState(false);
@@ -17,32 +16,7 @@ const Team = () => {
     return (
         <Fragment>
 
-        <div className="containerButtons">  
-             <div className="containerBtns">
-                <div className="containerAllBtn">
-                    <Link to="/levelOne" className="link" >
-                        <button className="btnOne">
-                            <h4 className="tittleBtn">Etapa 1</h4>                            
-                        </button>
-                    </Link>
-                </div>
-                <div className="containerAllBtn">
-                    <Link  to="/levelTwo" className="link">
-                        <button className="btnTwo">
-                            <h4 className="tittleBtn">Etapa 2</h4>                            
-                        </button>
-                    </Link>
-                </div>
-                <div className="containerAllBtn">
-                    <Link to="/levelThree" className="link">
-                        <button className="btnThree">
-                            <h4 className="tittleBtn">Etapa 3</h4>                            
-                        </button>
-                    </Link>
-                </div>
-            </div>  
-         </div>    
-
+        <Buttons />
         <div className="sectionTeam">
             <h1 className="text-center">Conoce al Escuadron Prevención</h1>
             <div className="containerTeam">
