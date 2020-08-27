@@ -13,7 +13,7 @@ const Navbar = () => {
                 </NavLink>
             </div>
             <div className="mx-auto" >
-                <Link to="/" className="navbar-brand mx-auto"> <img src={logo} width="150" alt=""/></Link>
+                <Link to="/" className="navbar-brand hootielogo"> <img src={logo} width="150" alt=""/></Link>
             </div>
         </div>
     )

@@ -1,12 +1,13 @@
 .containerButtons{
-    width: 99%;
+    width: 13%;
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
     margin-top: 50px;
     position: fixed;
-    top:107px;
+    top:40px;
     left: 10px;
+    float:right; 
+    margin-left: 1100px;
 }
         .btnOne,
         .btnTwo,
