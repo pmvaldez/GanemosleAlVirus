@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const levelTwo = () => {
     return (
-        <div className="sectionGAV">
+        <div className="sectionLeveltwo">
              <h1>Etapa 2: Cuidados</h1>  
             <div className="containerAllBtn">
                     <Link to="/levelThree" className="link">
