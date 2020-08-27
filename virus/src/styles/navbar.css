@@ -1,8 +1,13 @@
 .nav {
-    background-color: #ddc5f9;
+    /* background-color: #ddc5f9; */
+    background-color: red;
 }
 
 .btn-nav {
     background-color: #64259D;
     color: white;
+}
+
+.hootielogo {
+    padding-right: 100px;
 }
