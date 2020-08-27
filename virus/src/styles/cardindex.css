@@ -1,0 +1,19 @@
+@font-face{
+    font-family: 'HelveticaRoman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+}  
+
+.contCard{
+    background-color: #F4F4FF; 
+    width: 100%;
+}
+.card-text-cont {
+    width: 50%;
+    text-align: center;
+}
+
+.card-text {
+font-family: 'HelveticaRoman';
+font-size: 1.3rem;
+}
+

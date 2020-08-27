@@ -1,63 +1,68 @@
-import React, { Fragment } from 'react'
+import React, { Component} from 'react'
 import tomask from '../img/tomask.png'
 import wantini from '../img/wantini.png'
 import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
-import {Button, Modal} from 'react-bootstrap'
+/* import CardIndex from './CardIndex' */
 import '../styles/team.css'
-
-
-const Team = () => {
-    const [show, setShow] = React.useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
-
-    return (
-        <Fragment>
-        <div className="sectionTeam">
-            <h1 className="text-center">Conoce al Escuadron Prevención</h1>
-            <div className="containerTeam">
-            <img src={tomask} className="team " alt="jabon jabier" width="300" height="200"/> <Button variant="secondary" onClick={handleShow}>+</Button>
-            <img src={wantini} className="team" alt="wantini" width="200" height="250"/><Button variant="secondary" onClick={handleShow}>+</Button>
-            <img src={puma} className="team" alt="pumar" width="304" height="400"/><Button variant="secondary" onClick={handleShow}>+</Button>
-            <img src={jabon} className="team" alt="jabon jabier" width="200" height="236"/><Button variant="secondary" onClick={handleShow}>+</Button>    
-            {/* <a href="#ex1" rel="modal:open"><img src={tomask} className="team " alt="jabon jabier" width="300" height="200"/></a>
-            <a href="#ex2" rel="modal:open"><img src={wantini} className="team" alt="wantini" width="200" height="250"/></a>
-            <img src={puma} className="team" alt="pumar" width="304" height="400"/>
-            <img src={jabon} className="team" alt="jabon jabier" width="200" height="236"/> */}
-            </div>
-
-            <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title>To Mask</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <img src={tomask} width="200" alt=""/> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam totam maxime libero temporibus quaerat dolores sint unde, nisi incidunt aliquam laudantium? Voluptatem nemo aliquam, neque necessitatibus accusantium nihil nostrum.</p>
-                </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose} className="btn-info">
-                    Cerrar
-                     </Button>
-                </Modal.Footer>
-            </Modal> 
-            {/* <div id="ex1" className="modal">
-                <h3>To Mask</h3>
-                <img src={tomask} width="200" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti vel numquam, rem iure eos rerum ipsam? At, cumque? Quo debitis voluptatibus error assumenda obcaecati rem dolorem nemo unde at?</p>
-                <a href="#Modal" rel="modal:close" className="btn-info btn">Close</a>
-            </div>
-
-            <div id="ex2" className="modal">
-                <h3>Wantini</h3>
-                <img src={wantini} width="150" alt=""/>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A deleniti vel numquam, rem iure eos rerum ipsam? At, cumque? Quo debitis voluptatibus error assumenda obcaecati rem dolorem nemo unde at?</p>
-                <a href="#Modal" rel="modal:close" className="btn-info btn">Close</a>
-            </div> */}
-        </div>         
-        </Fragment>
-    )
+import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+/* import Footer from './Footer' */
+ 
+class ModalPage extends Component {
+state={
+  modal2: false,
+  modal3: false,
+  modal4: false,
+  modal5: false
 }
 
-export default Team
+toggle = nr => () => {
+  let modalNumber = 'modal' + nr
+  this.setState({
+    [modalNumber]: !this.state[modalNumber]
+  });
+}
+
+render() {
+  return (
+    <div className="sectionTeam" id="team">
+        {/* <CardIndex /> */}
+        <h1 className="text-center">Conoce al Escuadron Prevención</h1>
+        <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
+            <div className="d-flex flex-row flex-wrap">
+              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team " alt="jabon jabier" width="300" height="200"/></MDBBtn>
+              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={wantini} className="team" alt="wantini" width="200" height="250"/></MDBBtn>
+              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)} style={{height: '56vh'}} ><img src={puma} className="team" alt="pumar" width="304" height="400"/></MDBBtn>
+              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={jabon} className="team" alt="jabon jabier" width="200" height="236"/></MDBBtn>   
+           </div>
+           </div>
+    <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
+        <MDBModalHeader toggle={this.toggle(2)} style={{color: 'red'}}>Puma Espuma</MDBModalHeader>
+            <MDBModalBody style={{ backgroundColor: 'blue',}}>
+            <div className="container">
+                <div><img src={puma} width="200px" alt=""  /></div>
+                <div>Nombre: Puma Espuma
+                Edad: 7 años
+                Caracteristicas: Es alegre y siempre ve el lado positivo de las cosas, ayuda a u sus amigos
+                en todo momento.
+                Mision: Guiar al Escuadrón Prevención y ¡combatir juntos el virus!</div>
+            </div>
+            </MDBModalBody>
+            <MDBModalFooter>
+                <MDBBtn color="secondary" onClick={this.toggle(2)}>cerrar</MDBBtn>
+            </MDBModalFooter>
+    </MDBModal>
+   {/*  <Footer /> */}
+    </div>    
+  );
+  }  
+}
+
+
+//export default Team
+
+export default ModalPage;
+

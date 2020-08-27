@@ -1,0 +1,54 @@
+.containerButtons{
+    width: 9%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    position: fixed;
+    top:40px;
+    left: 10px;
+    float:right; 
+    margin-left: 90%;
+}
+        .btnOne,
+        .btnTwo,
+        .btnThree{      
+            width:150px;
+            height:150px;            
+            margin: 5px;
+            padding:10px;
+            border-radius: 100px; 
+            border: none; 
+            font-size:11px;
+            line-height:32px;
+            text-transform: uppercase;
+            float:right;            
+        }
+        .link{
+            text-decoration:none;
+        }        
+        .containerAllBtn:hover .btnOne,
+        .containerAllBtn:hover .btnTwo,        
+        .containerAllBtn:hover .btnThree{
+            transform:scale(1.2);
+        }   
+  
+        .btnOne{
+            background: #FDD109;
+        }
+        .btnTwo{
+            background: #3CDCA5;
+        }
+        .btnThree{
+            background: #FF508C;
+        }
+            .tittleBtn{
+                font-family: 'Helvetica';
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 33px;
+                text-align: center;
+                margin: 0;
+                color: #FFFFFF;
+            }
+            
