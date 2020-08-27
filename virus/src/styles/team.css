@@ -11,16 +11,27 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 10em;
-    overflow:hidden
+    margin-top: 1em;
+    overflow:hidden;
+     height: 70%; 
 }
 
 .team{
     margin-left: 20px;
 }
+.team:hover{
+    transform:scale(1.2);
+    /*box-shadow: 0 0 20px #4f9;*/
+    -webkit-filter: drop-shadow(12px 12px 7px #ffffccfd );
+     filter: drop-shadow(12px 12px 7px #ffffccfd);
+}
 
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-  }
+.btn-default {
+    background-color: transparent !important;
+    border:none !important;
+}
+
+.btn {
+    box-shadow:none !important;}
+
 

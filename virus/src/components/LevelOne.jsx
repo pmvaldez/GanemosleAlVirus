@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const levelOne = () => {
     return (
-    <div className="sectionGAV">
+    <div className="sectionLevelone">
         
              <h1>Etapa 1: ¿Que es el Covid-19?</h1>     
         
