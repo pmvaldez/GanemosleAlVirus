@@ -5,7 +5,7 @@ import hootie from '../img/hootie.png'
 
 const CardIndex = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-self-center">
+    <div className="d-flex flex-column justify-content-center align-self-center contCard p-4">
       <div className="mx-auto card-text-cont">
         <p className="card-text">
           ¿Qué es?
