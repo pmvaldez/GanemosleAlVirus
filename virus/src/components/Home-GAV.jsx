@@ -1,12 +1,17 @@
 import React from 'react';
 import '../styles/home-gav.css';
 import logoGAV from '../img/GAV_logo.png';
+import arrow from '../img/arrow-204-32.png';
 
 const HomeGAV = () => {
     return (
       <div className="sectionGAV">
+        <div>
         <img src={logoGAV} className="img-fluid logogav" alt="Responsiveimg" />
-        <a href="#team" className="btn btn-info">+</a>           
+        </div>
+        <div className="arrowone">
+        <a href="#team" className="arrow"><img src={arrow} alt=""/></a>
+        </div>           
       </div>
     )
 }
