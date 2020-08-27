@@ -1,9 +1,17 @@
 .sectionGAV {
     background-color: #ddc5f9;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 100%;
     height: 100vh;
     padding: 9rem 0 10rem 0;
+}
+.arrowone {
+   margin-top: 10em;
+}
+.arrow {
+    scroll-behavior: smooth;
 }
 
 .logogav {

@@ -1,0 +1,9 @@
+@font-face{
+    font-family: 'HelveticaRoman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+}  
+
+.card-text {
+font-family: 'HelveticaRoman';
+font-size: 1.5rem;
+}
