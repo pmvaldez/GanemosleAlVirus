@@ -1,20 +1,12 @@
 import React from "react";
 import '../styles/cardindex.css'
-
-import hootie from '../img/hootie.png'
+import arrow from '../img/arrow-204-32.png';
+import ModalHootie from '../components/ModalHootie'
 
 const CardIndex = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-self-center contCard p-4">
-      <div className="mx-auto card-text-cont">
-        <p className="card-text">
-          ¿Qué es?
-        </p>
-        </div>
-      <div className="mx-auto p-4">
-        <img src={hootie} alt="Responsiveimg" width="250" />
-      </div>
-
+    <div className="d-flex flex-column justify-content-center align-self-center contCard p-4" id="card">
+      <ModalHootie />       
       <div className="mx-auto card-text-cont">
         <p className="card-text">
           Ganémosle al Virus es una plataforma informativa y educativa que
@@ -24,6 +16,11 @@ const CardIndex = () => {
           de autocuidado para poder hacerle frente al virus.
         </p>
       </div>
+      <div className="arrowone d-flex flex-column justify-content-center align-self-center">
+        <div>
+          <a href="#team" className="arrow"><img src={arrow} alt=""/></a>
+        </div>
+        </div>  
     </div>
   );
 }
