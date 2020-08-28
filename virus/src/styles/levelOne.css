@@ -1,8 +1,9 @@
-.sectionGAV {
-    background-color: #ddc5f9;
-    width: 100%;
-    height: 100vh;
-    padding: 9rem 0 10rem 0;
+body {
+    background: url("../img/fondo1.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .soygel {
     font-family: 'RoundedElegance', Arial, Helvetica, sans-serif;

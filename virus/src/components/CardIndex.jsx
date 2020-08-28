@@ -5,7 +5,12 @@ import hootie from '../img/hootie.png'
 
 const CardIndex = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-self-center p-5">
+    <div className="d-flex flex-column justify-content-center align-self-center contCard p-4">
+      <div className="mx-auto card-text-cont">
+        <p className="card-text">
+          ¿Qué es?
+        </p>
+        </div>
       <div className="mx-auto p-4">
         <img src={hootie} alt="Responsiveimg" width="250" />
       </div>
