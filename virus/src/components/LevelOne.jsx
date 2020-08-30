@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import ProgressNav from './ProgressNav'
 import Footer from './Footer'
-import adelante from '../img/adelante.svg';
-//import LevelOneC1 from './LevelOne-C1'
-import LevelOneC2 from './LevelOne-C2';
+import adelante from '../img/BotonDerecha.png';
+import atras from '../img/BotonIzquierd.png';
+import LevelOneC1 from './LevelOne-C1'
+//import LevelOneC2 from './LevelOne-C2';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 
@@ -18,23 +19,31 @@ const levelOne = () => {
         <div className="section-mod1-general">    
           <ProgressNav/> 
           <ProgressBar>
-            <ProgressBar animated  striped variant="success" now={now} label={`${now}%`}  key={1} />
+            <ProgressBar animated  striped variant="success" now={now} key={1} />
             <ProgressBar variant="warning" now={75} key={2} />
           </ProgressBar>  
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">
-              <LevelOneC2/>
+              <LevelOneC1/>
             </div>
           </div>
-          <div className=".containernextButton">
+{/*       <div className=".containernextButton">
             <Link to="/levelOne-1" className="link">
               <button className="btnNext">
                 <img src={adelante}  alt='next' width='center'/>
               </button>
-            </Link>
-          </div> 
-        </div>        
-      </div>
+           </Link>
+          </div>  */}
+          <div className="containernextButton">
+            <div>
+            <a href="/"><img src={atras} alt="" className="btnNext" /></a>
+            </div>
+            <div>
+            <a href="/levelOne-1"><img src={adelante} alt="" className="btnNext"/></a>
+            </div>
+          </div>   
+      </div>        
+    </div>
       <Footer />
    </Fragment>  
   );
