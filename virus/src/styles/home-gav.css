@@ -21,3 +21,9 @@
     font-family: 'RoundedElegance', Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 450px) {
+    .sectionGAV {
+        height: 94vh;
+    }
+
+}

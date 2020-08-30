@@ -1,0 +1,8 @@
+@media (max-width: 450px) {
+    .sectionTeam {
+        padding: 2rem 0 0 0;
+    }
+    .logofooter{
+        width:'80%'
+    }
+}

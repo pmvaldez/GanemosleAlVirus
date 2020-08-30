@@ -1,29 +1,28 @@
 import React from "react";
 import '../styles/cardindex.css'
-
-import hootie from '../img/hootie.png'
+import arrow from '../img/arrow-204-32.png';
+import ModalHootie from '../components/ModalHootie'
 
 const CardIndex = () => {
   return (
-    <div className="d-flex flex-column justify-content-center align-self-center contCard p-4">
-      <div className="mx-auto card-text-cont">
-        <p className="card-text">
-          ¿Qué es?
-        </p>
+    <div className="contCard" id="card">
+      <div className="d-flex flex-column justify-content-center align-self-center">
+        <ModalHootie />       
+        <div className="mx-auto card-text-cont">
+          <p className="card-text">
+            Ganémosle al Virus es una plataforma informativa y educativa que
+            funciona como herramienta para que padres y tutores puedan enseñar a
+            los niños bajo su cuidado a entender qué está sucediendo en la
+            actualidad en el contexto de la pandemia del COVID-19 y dar técnicas
+            de autocuidado para poder hacerle frente al virus.
+          </p>
         </div>
-      <div className="mx-auto p-4">
-        <img src={hootie} alt="Responsiveimg" width="250" />
-      </div>
-
-      <div className="mx-auto card-text-cont">
-        <p className="card-text">
-          Ganémosle al Virus es una plataforma informativa y educativa que
-          funciona como herramienta para que padres y tutores puedan enseñar a
-          los niños bajo su cuidado a entender qué está sucediendo en la
-          actualidad en el contexto de la pandemia del COVID-19 y dar técnicas
-          de autocuidado para poder hacerle frente al virus.
-        </p>
-      </div>
+        <div className="arrowone d-flex flex-column justify-content-center align-self-center">
+          <div>
+            <a href="#team" className="arrow"><img src={arrow} alt=""/></a>
+          </div>
+          </div>
+        </div>  
     </div>
   );
 }

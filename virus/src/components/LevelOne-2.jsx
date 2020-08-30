@@ -1,0 +1,26 @@
+import React from "react";
+import "../styles/levelOne.css";
+import { Link } from "react-router-dom";
+//import ProgressBar from './ProgressBar'
+//import Footer from './Footer'
+import adelante from '../img/adelante.svg';
+
+const levelOne2 = () => {
+  return (
+    <div className="d-flex">
+      <div className="section-mod1-general">
+        {/* <h1>Etapa 1: ¿Que es el Covid-19?</h1> */}
+       <div className="containernextButton">
+          <Link to="/levelOne-3" className="link">
+            <button className="btnNext">
+             <img src={adelante}  alt='next' width='110'/>
+            </button>
+          </Link>
+        </div> 
+{/*<ProgressBar/>*/}
+      </div>
+      {/* <Footer/> */}
+    </div>
+  );
+};
+export default levelOne2;

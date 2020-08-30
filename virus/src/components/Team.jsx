@@ -3,13 +3,11 @@ import tomask from '../img/tomask.png'
 import wantini from '../img/wantini.png'
 import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
-/* import CardIndex from './CardIndex' */
 import '../styles/team.css'
-import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
-/* import Footer from './Footer' */
  
 class ModalPage extends Component {
 state={
@@ -29,40 +27,39 @@ toggle = nr => () => {
 render() {
   return (
     <div className="sectionTeam" id="team">
-        {/* <CardIndex /> */}
-        <h1 className="text-center">Conoce al Escuadron Prevención</h1>
+        <h1 className="titleTeam">Conoce al Escuadron Prevención</h1>
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
-            <div className="d-flex flex-row flex-wrap">
-              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team " alt="jabon jabier" width="300" height="200"/></MDBBtn>
-              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={wantini} className="team" alt="wantini" width="200" height="250"/></MDBBtn>
-              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)} style={{height: '56vh'}} ><img src={puma} className="team" alt="pumar" width="304" height="400"/></MDBBtn>
-              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={jabon} className="team" alt="jabon jabier" width="200" height="236"/></MDBBtn>   
-           </div>
-           </div>
-    <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
-        <MDBModalHeader toggle={this.toggle(2)} style={{color: 'red'}}>Puma Espuma</MDBModalHeader>
-            <MDBModalBody style={{ backgroundColor: 'blue',}}>
-            <div className="container">
-                <div><img src={puma} width="200px" alt=""  /></div>
-                <div>Nombre: Puma Espuma
-                Edad: 7 años
-                Caracteristicas: Es alegre y siempre ve el lado positivo de las cosas, ayuda a u sus amigos
-                en todo momento.
-                Mision: Guiar al Escuadrón Prevención y ¡combatir juntos el virus!</div>
+          <div className="d-flex flex-row flex-wrap justify-content-center align-item-center">
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team tomask" alt="tomask" width="300" height="200"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={wantini} className="team guantrini" alt="guantrini" width="200" height="250"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)} style={{height: '60vh'}} ><img src={puma} className="team puma" alt="puma" width="304" height="400"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={jabon} className="team jabon" alt="jabon jabier" width="200" height="236"/></MDBBtn>   
+          </div>
+        </div>
+        <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
+          <MDBModalHeader className="modalTeamOne" toggle={this.toggle(2)}>Hootie</MDBModalHeader> 
+          <MDBModalBody className="modalTeam">
+            <div className="d-flex flex-row container" >
+              <div><img src={puma} alt="Responsiveimg" width="200"/></div>
+              <div>Personalidad: Sabio, calmo, equilibrado. 
+                  Sabe cuándo actuar y cuándo mantener distancia. 
+                  Es como el sensei de de Puma Espuma. 
+                  <br/>
+                  Siempre con el consejo adecuado
+                  en el momento correcto. Frente a coronavirus, se
+                  defiende con su amplio conocimiento y con la
+                  respuesta adecuada. Es quien guía al escuadrón
+                  Prevención.
+                  <br/>
+                  Frase típica: “El equilibrio está en ti.”
+              </div>
             </div>
-            </MDBModalBody>
-            <MDBModalFooter>
-                <MDBBtn color="secondary" onClick={this.toggle(2)}>cerrar</MDBBtn>
-            </MDBModalFooter>
-    </MDBModal>
-   {/*  <Footer /> */}
+          </MDBModalBody >
+        </MDBModal >
     </div>    
   );
   }  
 }
-
-
-//export default Team
 
 export default ModalPage;
 
