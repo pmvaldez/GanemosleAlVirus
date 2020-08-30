@@ -8,7 +8,7 @@ const Footer = () => {
     <MDBFooter>
         <div className="d-flex flex-row cont">
             <div className="context">Hecho con amor <MDBIcon icon="heart" /></div>
-            <div className="contlogo"><img src={logofooter} alt="logofooter" className="logofooter" /* style={{width:'50%'}} */ className="logofooter"/></div>
+            <div className="contlogo"><img src={logofooter} alt="logofooter" className="logofooter"/></div>
         </div>
     </MDBFooter>
     )

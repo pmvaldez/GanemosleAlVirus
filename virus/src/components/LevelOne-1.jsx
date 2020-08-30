@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/levelOne.css";
 import { Link } from "react-router-dom";
-//import ProgressBar from './ProgressBar'
 //import Footer from './Footer'
 import adelante from '../img/adelante.svg';
 
@@ -17,7 +16,6 @@ const levelOne1 = () => {
             </button>
           </Link>
         </div> 
-{/*<ProgressBar/>*/}
       </div>
       {/* <Footer/> */}
     </div>
