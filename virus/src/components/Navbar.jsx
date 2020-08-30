@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="nav p-4 d-flex flex-wrap">
             <div className="d-flex ordertwo">    
                 <NavLink to="/admin">
-                    <MDBBtn gradient="peach" className="peachBott">PARA TUTORES</MDBBtn>
+                    <MDBBtn gradient="purple" className="peachBott">PARA TUTORES</MDBBtn>
                 </NavLink>
             </div>
             <div className="mx-auto orderOne" >

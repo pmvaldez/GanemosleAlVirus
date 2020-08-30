@@ -27,13 +27,13 @@ toggle = nr => () => {
 render() {
   return (
     <div className="sectionTeam" id="team">
-        <h1 className="text-center">Conoce al Escuadron Prevención</h1>
+        <h1 className="titleTeam">Conoce al Escuadron Prevención</h1>
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
-          <div className="d-flex flex-row flex-wrap">
-            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team " alt="jabon jabier" width="300" height="200"/></MDBBtn>
-            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={wantini} className="team" alt="wantini" width="200" height="250"/></MDBBtn>
-            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)} style={{height: '60vh'}} ><img src={puma} className="team" alt="pumar" width="304" height="400"/></MDBBtn>
-            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={jabon} className="team" alt="jabon jabier" width="200" height="236"/></MDBBtn>   
+          <div className="d-flex flex-row flex-wrap justify-content-center align-item-center">
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team tomask" alt="tomask" width="300" height="200"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={wantini} className="team guantrini" alt="guantrini" width="200" height="250"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)} style={{height: '60vh'}} ><img src={puma} className="team puma" alt="puma" width="304" height="400"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={jabon} className="team jabon" alt="jabon jabier" width="200" height="236"/></MDBBtn>   
           </div>
         </div>
         <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
