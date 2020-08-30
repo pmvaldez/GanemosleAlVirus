@@ -1,12 +1,30 @@
-body {
-    background: url("../img/fondo1.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+/* html {
+  background: url("../img/fondo1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
 .soygel {
-    font-family: 'RoundedElegance', Arial, Helvetica, sans-serif;
+  font-family: "RoundedElegance", Arial, Helvetica, sans-serif;
+}
+
+.whitebox {
+  width: 1000px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 32px 32px 32px 32px;
+  -moz-border-radius: 32px 32px 32px 32px;
+  -webkit-border-radius: 32px 32px 32px 32px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+  -moz-box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+  box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+}
+
+.hootieilus {
+    float: left;
 }
 
 /*.containernextButton{
@@ -39,3 +57,10 @@ body {
             background: red;
         }
         
+.backgroundimg {
+    background: url("../img/fondo1.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
