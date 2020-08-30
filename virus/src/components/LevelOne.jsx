@@ -5,6 +5,7 @@ import ProgressBar from './ProgressBar'
 import Footer from './Footer'
 import adelante from '../img/adelante.svg';
 import LevelOneC1 from './LevelOne-C1'
+import LevelOneC2 from './LevelOne-C2'
 
 
 
@@ -15,9 +16,12 @@ const levelOne = () => {
       <div className="section-mod1-general">
         <ProgressBar />
 
+        {/* d-inline-flex p-4 whitebox */}
         <div className="container text-center mt-4 mb-4">
-          <div class="d-inline-flex p-4 whitebox">
-            <LevelOneC1/>
+          <div class="p-4 whitebox">
+            {/* <LevelOneC1/> */}
+            <LevelOneC2/>
+
           </div>
         </div>
 
