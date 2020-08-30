@@ -2,6 +2,7 @@ import React, { Component} from 'react'
 import hootie from '../img/hootie.png'
 import hootieTall from '../img/GAVHoo.png'
 import '../styles/cardindex.css'
+import '../styles/modalhootie.css'
 import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
@@ -24,7 +25,7 @@ toggle = nr => () => {
 
 render() {
   return (
-    <div className="contCard p-4" id="card">
+    <div className="conthootie">
         <h1 className="text-center">¿Que es?</h1>
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
             <div className="d-flex flex-row flex-wrap">
