@@ -4,7 +4,7 @@ import guantrini from '../img/wantini.png'
 import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
 import '../styles/team.css'
-import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
+import {MDBBtn, MDBModal, MDBModalBody} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
