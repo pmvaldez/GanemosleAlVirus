@@ -1,14 +1,14 @@
 import React from 'react'
 import logofooter from '../img/logofooter.jpg'
 import '../styles/footer.css'
-import { MDBFooter } from 'mdbreact'
+import { MDBFooter, MDBIcon } from 'mdbreact'
 
 const Footer = () => {
     return (
     <MDBFooter>
-        <div className="d-flex flex-row">
-            <div style={{width:'70%', backgroundColor:"#662499", color:'white', paddingTop:'15px'}}>hecho con amor</div>
-            <div style={{width:'30%'}}><img src={logofooter} alt="" style={{width:'50%'}} className="logofooter"/></div>
+        <div className="d-flex flex-row cont">
+            <div className="context">Hecho con amor <MDBIcon icon="heart" /></div>
+            <div className="contlogo"><img src={logofooter} alt="logofooter" className="logofooter" /* style={{width:'50%'}} */ className="logofooter"/></div>
         </div>
     </MDBFooter>
     )

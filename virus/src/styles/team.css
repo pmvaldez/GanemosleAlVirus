@@ -25,7 +25,7 @@
     margin-left: 20px;
 }
 .team:hover{
-    transform:scale(1.2);
+    transform:scale(1.1);
     /*box-shadow: 0 0 20px #4f9;*/
     -webkit-filter: drop-shadow(12px 12px 7px #ffffccfd );
      filter: drop-shadow(12px 12px 7px #ffffccfd);
@@ -61,32 +61,42 @@
     border-radius: 3.125rem;
 }
 
-@media (max-width: 450px) {
+@media (min-width:320px) and (max-width: 450px) {
+    .btn {
+      padding: 1.16rem 2.14rem !important;
+      height: 29vh;
+    }
     .sectionTeam {
         padding: 2rem 0 0 0;
-        height: 158vh;
+        height: 92vh;
     }
     .team{
-        margin-left: 0px;
         margin-left: 0px;
     }
     .titleTeam{
         top:2rem;
     }
+    .contEscuadron{
+        width: 100%;
+        margin-top: 36px;
+    }
+    .containerTeam{
+        margin-top: 2px;
+    }
+ /*    .btn {
+        height: 29vh !important;
+    }  */
+
     .tomask{
-        width: 224px;
-        height: 144px;
+        width: 137px;
     }
     .guantrini{
-        width: 160px;
-        height: 217px;
+        width: 100px;
     }
     .puma{
-        width: 275px;
-        height: 392px;
+        width: 149px;
     }
     .jabon{
-        width: 136px;
-        height: 175px;
+        width: 100px;
     }
 }

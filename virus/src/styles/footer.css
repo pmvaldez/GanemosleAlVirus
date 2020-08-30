@@ -1,8 +1,41 @@
+.logofooter{
+    width:100%;
+}
+
+.cont{
+    height: 80%;
+}
+.context{
+    width: 70%;
+    background-color:#662499;
+    color:white;
+    padding-top:15px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.contlogo{
+    width: 30%;
+}
+
 @media (max-width: 450px) {
     .sectionTeam {
         padding: 2rem 0 0 0;
     }
-    .logofooter{
-        width:'80%'
+     .logofooter{
+        width:100%;
     }
+    .context{
+        width: 50%;
+        font-size: 1rem;
+    }
+    .contlogo{
+        width: 50%;
+    }
+    
 }
+/* @media (max-width: 1064px){
+    .logofooter{
+        width:30%;    
+    }
+    
+} */
