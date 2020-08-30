@@ -18,6 +18,6 @@ const levelOneContenido1 = () => {
   )
 }
 
-export default levelOneContenido1;
+export default levelOneContenido1
 
 
