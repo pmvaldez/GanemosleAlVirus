@@ -1,23 +1,28 @@
-import React from 'react';
-import '../styles/levelOne.css';
+import React from "react";
+import "../styles/levelOne.css";
 import { Link } from "react-router-dom";
+import ProgressBar from './ProgressBar';
+import Footer from './Footer';
+import LevelOneC1 from './LevelOne-C1'
 
 const levelOne = () => {
-    return (
-    <div className="sectionLevelone">
-        
-             <h1>Etapa 1: ¿Que es el Covid-19?</h1>     
-        
-    <div className="containerAllBtn">
-    <Link  to="/levelTwo" className="link">
-        <button className="btnTwo">
-            <h4 className="tittleBtn">Etapa 2</h4>                            
-        </button>
-    </Link>
-</div>  
-</div>   
-    )
-}
+  return (
+    <div className="d-flex backgroundimg">
+      <div className="section-mod1-general">
+        <ProgressBar />
 
-export default levelOne
+        <div className="container text-center mt-4 mb-4">
+          <div class="d-inline-flex p-4 whitebox">
+            <LevelOneC1/>
+          </div>
+        </div>
+
+        <Footer />
+      </div>
+    </div>
+  );
+};
+
+export default levelOne;
+
 
