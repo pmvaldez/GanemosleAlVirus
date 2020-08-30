@@ -1,12 +1,10 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-//import { Link } from "react-router-dom";
 import ProgressNav from './ProgressNav'
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
 import LevelOneC1 from './LevelOne-C1'
-//import LevelOneC2 from './LevelOne-C2';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 

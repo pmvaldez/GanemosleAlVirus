@@ -1,26 +1,40 @@
-import React from "react";
+import React, { Fragment } from "react"
 import "../styles/levelOne.css";
-import { Link } from "react-router-dom";
-//import ProgressBar from './ProgressBar'
-//import Footer from './Footer'
-import adelante from '../img/adelante.svg';
+import LevelOneC2 from './LevelOne-C2';
+import ProgressNav from './ProgressNav'
+import Footer from './Footer'
+import adelante from '../img/BotonDerecha.png';
+import atras from '../img/BotonIzquierd.png';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 const levelOne2 = () => {
+  const now = 75;
   return (
-    <div className="d-flex">
-      <div className="section-mod1-general">
-        {/* <h1>Etapa 1: ¿Que es el Covid-19?</h1> */}
-       <div className="containernextButton">
-          <Link to="/levelOne-3" className="link">
-            <button className="btnNext">
-             <img src={adelante}  alt='next' width='110'/>
-            </button>
-          </Link>
-        </div> 
-{/*<ProgressBar/>*/}
-      </div>
-      {/* <Footer/> */}
+    <Fragment> 
+      <div className="d-flex backgroundimg">
+        <div className="section-mod1-general">    
+          <ProgressNav/> 
+          <ProgressBar>
+            <ProgressBar animated  striped variant="success" now={now} key={1} />
+            <ProgressBar variant="warning" now={25} key={2} />
+          </ProgressBar>  
+          <div className="container text-center mt-4 mb-4">
+            <div class="p-4 whitebox">
+              <LevelOneC2/>
+            </div>
+          </div>
+          <div className="containernextButton">
+            <div>
+            <a href="/levelOne-1"><img src={atras} alt="" className="btnNext" /></a>
+            </div>
+            <div>
+            <a href="/levelOne-3"><img src={adelante} alt="" className="btnNext"/></a>
+            </div>
+          </div>   
+      </div>        
     </div>
+      <Footer />
+   </Fragment>  
   );
 };
 export default levelOne2;
