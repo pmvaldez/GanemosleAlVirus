@@ -9,6 +9,7 @@
     height: 95vh;
     padding: 4rem;
 }
+
 .card-text-cont {
     width: 50%;
     text-align: center;
@@ -24,36 +25,6 @@ font-size: 1.3rem;
 .card-text-title {
     font-family: 'HelveticaRoman';
     font-size: 1.8rem;    
-}
-.modalHottie {
-    background: url('../img/yellow.png');
-    background-size: 100%;
-    font-family: 'HelveticaRoman';
-    font-size: 1.2rem;
-    border-bottom-left-radius: 2.125rem !important;
-    border-bottom-right-radius: 2.125rem !important;
-}
-.modalHotti {
-    background: url('../img/yellow.png');
-    background-size: 100%;
-
-}
-.h4 {
-    font-family: 'HelveticaRoman'!important;
-    font-size: 1.8rem !important;
-    text-align: center !important;
-}
-.modal-content {
-    background-color: transparent !important;
-    width: 120% !important;
-}
-.modal-dialog .modal-content .modal-header {
-    border-top-left-radius: 2.125rem !important;
-    border-top-right-radius: 2.125rem !important;
-}
-.modal-dialog .modal-content {
-    border: 0;
-    border-radius: 3.125rem;
 }
 
 
