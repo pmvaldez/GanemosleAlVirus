@@ -8,6 +8,9 @@ import {
 import Game from './components/Game';
 import Home from './components/Home';
 import LevelOne from './components/LevelOne';
+import LevelOne1 from './components/LevelOne-1';
+import LevelOne2 from './components/LevelOne-2';
+import LevelOne3 from './components/LevelOne-3';
 import LevelTwo from './components/LevelTwo';
 import LevelThree from './components/LevelThree';
 
@@ -18,7 +21,16 @@ function App() {
         <Switch>
             <Route path="/levelOne">
               <LevelOne />
+            </Route>
+            <Route path="/levelOne-1">
+              <LevelOne1 />
             </Route>  
+            <Route path="/levelOne-2">
+              <LevelOne2 />
+            </Route>  
+            <Route path="/levelOne-3">
+              <LevelOne3 />
+            </Route>    
             <Route path="/levelTwo">
               <LevelTwo />
             </Route>  

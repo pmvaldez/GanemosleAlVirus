@@ -14,7 +14,7 @@ const Home = () => {
             <Buttons />
             <CardIndex />
             <Team />   
-             <Footer />  
+            <Footer />  
         </div>
     )
 }

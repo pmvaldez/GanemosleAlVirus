@@ -8,3 +8,34 @@ body {
 .soygel {
     font-family: 'RoundedElegance', Arial, Helvetica, sans-serif;
 }
+
+/*.containernextButton{
+    width: 9%;
+    display: flex;
+    direction: column;
+    margin-top: 50px;
+    position: right ;
+    top:40px;
+    left: 10px;
+    /*float:right
+    margin-left: 90%;
+}*/
+        .btnNext{      
+            width:150px;
+            height:150px;            
+            margin: 5px;
+            padding:10px;
+            border-radius: 100px; 
+            border: none; 
+            font-size:11px;
+            line-height:32px;
+            text-transform: uppercase;
+            float:right;            
+        }
+        .link{
+            text-decoration:none;
+        }      
+        .btnNext{
+            background: red;
+        }
+        
