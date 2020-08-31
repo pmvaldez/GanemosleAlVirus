@@ -68,6 +68,12 @@
   width:95%;
 }
 
+.infoimg{
+  width: 80%;
+  height: 474px;
+  margin-top: -23px;
+}
+
 @media (max-width: 468px) {
   .whitebox {
     width: 100% !important;

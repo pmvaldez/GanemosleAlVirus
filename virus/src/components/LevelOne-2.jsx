@@ -5,7 +5,10 @@ import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import info from "../img/infohootie.jpg"
+import info from "../img/hootieinfo.jpg"
+import covid from '../img/covid.png'
+import corona from '../img/corona.png'
+
 const levelOne2 = () => {
   const now = 75;
   return (
@@ -13,13 +16,21 @@ const levelOne2 = () => {
       <div className="d-flex backgroundimg">
         <div className="section-mod1-general">    
           <ProgressNav/> 
-          <ProgressBar>
-            <ProgressBar animated  striped variant="success" now={now} key={1} />
-            <ProgressBar variant="warning" now={25} key={2} />
-          </ProgressBar>  
+          <div className="d-flex pl-4">
+             <div>
+                <img src={covid} width="25px" alt=""/>
+            </div>
+            <ProgressBar>
+              <ProgressBar animated  striped variant="success" now={now} key={1} />
+              <ProgressBar variant="warning" now={75} key={2} />
+            </ProgressBar>  
+            <div>
+            <img src={corona} width="25px" alt=""/>
+            </div>
+          </div>
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">
-              <img src={info} alt= ""/>
+              <img src={info} alt= "" className="infoimg"/>
             </div>
           </div>
           <div className="containernextButton">

@@ -11,6 +11,7 @@ import LevelOne from './components/LevelOne';
 import LevelOne1 from './components/LevelOne-1';
 import LevelOne2 from './components/LevelOne-2';
 import LevelOne3 from './components/LevelOne-3';
+import LevelOne4 from './components/LevelOne4';
 import LevelTwo from './components/LevelTwo';
 import LevelThree from './components/LevelThree';
 import ParaTutores from './components/ZonaTutores';
@@ -32,7 +33,10 @@ function App() {
             </Route>  
             <Route path="/levelOne-3">
               <LevelOne3 />
-            </Route>    
+            </Route>  
+            <Route path="/levelOne-4">
+              <LevelOne4 />
+            </Route>   
             <Route path="/levelTwo">
               <LevelTwo />
             </Route>  
