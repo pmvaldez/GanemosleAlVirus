@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import hootie from '../img/hootie.png'
 import hootieTall from '../img/GAVHoo.png'
+import QueEs from '../img/que-es.svg'
 import '../styles/modalhootie.css'
 import {MDBBtn, MDBModal, MDBModalBody} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -24,8 +25,9 @@ toggle = nr => () => {
 
 render() {
   return (
-    <div className="conthootie">
-        <h1 className="text-center">¿Que es?</h1>
+    <div className="conthootie text-center">
+        {/* <h1 className="text-center">¿Que es?</h1> */}
+        <img src={QueEs} className="img-fluid" alt="Responsiveimg" width='300' />
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
             <div className="d-flex flex-row flex-wrap">
               <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={hootie}  className="team " alt="jabon jabier" width="200" height="200"/></MDBBtn>
