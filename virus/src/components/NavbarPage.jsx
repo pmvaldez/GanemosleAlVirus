@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, } from "mdbreact";
-
 import logo from '../img/logotipo.jpg';
 import '../styles/navbar.css';
 import '../index.css';
@@ -34,7 +33,10 @@ render() {
         <MDBCollapse isOpen = { this.state.collapse } navbar>
           <MDBNavbarNav right>
             <MDBNavItem active>
-            <MDBNavLink  to="/admin">TUTORES</MDBNavLink>
+            <MDBNavLink  to="/Tutores">TUTORES</MDBNavLink>
+            </MDBNavItem>
+            <MDBNavItem active>
+            <MDBNavLink  to="/Descargables">DESCARGABLES</MDBNavLink>
             </MDBNavItem>
           </MDBNavbarNav>
         </MDBCollapse>

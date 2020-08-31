@@ -14,6 +14,7 @@ import LevelOne3 from './components/LevelOne-3';
 import LevelTwo from './components/LevelTwo';
 import LevelThree from './components/LevelThree';
 import ParaTutores from './components/ZonaTutores';
+import Download from './components/Download';
 
 function App() {
   return (
@@ -41,8 +42,11 @@ function App() {
             <Route path="/Game">
               <Game />
             </Route>
-            <Route path="/admin">
+            <Route path="/Tutores">
                 <ParaTutores />
+            </Route>
+            <Route path="/Descargables">
+                <Download />
             </Route>
             <Route path="/" exact>
                 <Home />

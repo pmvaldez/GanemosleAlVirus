@@ -65,6 +65,7 @@
 .progress {
   height: 2rem !important;
   border-radius: 20.5rem !important;
+  width:95%;
 }
 
 @media (max-width: 468px) {
