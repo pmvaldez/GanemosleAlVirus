@@ -12,17 +12,17 @@ const ButtonsPrue = () => {
             <Link href="/levelOne"
             styles={{backgroundColor: '#FDD109', color: 'white',  width:'80px', height:'80px', margin: '10px'}}
                 >           
-            <img src={mod1}  alt='pumaboton' width='65'/> 
+            <img src={mod1}  alt='pumaboton' width='60'/> 
             </Link>
             <Link href="/levelTwo"
             styles={{backgroundColor: '#3CDCA5', color: 'white',  width:'80px', height:'80px',  margin: '10px'}}
                 >           
-            <img src={mod2}  alt='wantini' width='65'/>
+            <img src={mod2}  alt='wantini' width='55'/>
             </Link>
             <Link href="/levelThree"
                 styles={{backgroundColor: '#FF508C', color: 'white',  width:'80px', height:'80px',margin: '10px'}}
                 >
-                <img src={mod3}  alt='tomask' width='65'/>
+                <img src={mod3}  alt='tomask' width='58'/>
             </Link>
             <Button
                 rotate={true}

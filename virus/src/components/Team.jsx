@@ -27,7 +27,7 @@ toggle = nr => () => {
 render() {
   return (
     <div className="sectionTeam" id="team">
-        <h1 className="titleTeam">Conoce al Escuadron Prevención</h1>
+        <h1 className="titleTeam">Conoce al Escuadrón Prevención</h1>
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
           <div className="d-flex flex-row flex-wrap justify-content-center align-item-center contEscuadron">
             <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team tomask" alt="tomask" width="150" /></MDBBtn>
