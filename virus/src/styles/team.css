@@ -18,8 +18,10 @@
     overflow:hidden;
 }
 .titleTeam{
-    font-family: 'HelveticaRoman';
+    font-family: 'RoundedElegance';
     text-align: center;
+    font-size: 1.8rem;
+    color: #662499;
 }
 .team{
     margin-left: 20px;
