@@ -1,9 +1,9 @@
 import React, { Component} from 'react'
 import hootie from '../img/hootie.png'
 import hootieTall from '../img/GAVHoo.png'
-import '../styles/cardindex.css'
+import QueEs from '../img/que-es.svg'
 import '../styles/modalhootie.css'
-import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader } from 'mdbreact';
+import {MDBBtn, MDBModal, MDBModalBody} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
@@ -25,20 +25,23 @@ toggle = nr => () => {
 
 render() {
   return (
-    <div className="conthootie">
-        <h1 className="text-center">¿Que es?</h1>
+    <div className="conthootie text-center">
+        {/* <h1 className="text-center">¿Que es?</h1> */}
+        <img src={QueEs} className="img-fluid" alt="Responsiveimg" width='300' />
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
             <div className="d-flex flex-row flex-wrap">
               <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={hootie}  className="team " alt="jabon jabier" width="200" height="200"/></MDBBtn>
            </div>
            </div>
     <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
-        <MDBModalHeader className="modalHotti" toggle={this.toggle(2)}>
-          Hootie</MDBModalHeader> 
-            <MDBModalBody className="modalHottie">
-            <div className="d-flex flex-row container" >
-                <div><img src={hootieTall} alt="Responsiveimg" width="200"/></div>
-                <div>Personalidad: Sabio, calmo, equilibrado. 
+            <MDBModalBody className="modalHottie" >
+            {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
+            <span className="btnModal" onClick={this.toggle(2)}>&times;</span>
+            <div className="d-flex flex-row contInfo" >
+                <div className="imghootie"><img src={hootieTall} alt="Responsiveimg" width="200"/></div>
+                <div className="textarea">
+                <h1 className="text-center" style={{fontWeight:'bold'}}>Hootie</h1>
+                <p style={{fontWeight:'bold'}}>Personalidad:</p> Sabio, calmo, equilibrado. 
                 Sabe cuándo actuar y cuándo mantener distancia. 
                 Es como el sensei de de Puma Espuma. 
                 <br/>
@@ -48,11 +51,12 @@ render() {
                 respuesta adecuada. Es quien guía al escuadrón
                 Prevención.
                 <br/>
-                Frase típica: “El equilibrio está en ti.”
+                <p style={{fontWeight:'bold'}}>Frase típica:</p> “El equilibrio está en ti.”
                 </div>
             </div>
             </MDBModalBody >
     </MDBModal >
+    
     </div>    
   );
   }  

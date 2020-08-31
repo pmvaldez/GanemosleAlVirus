@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import "../styles/zonatutores.css";
+import NavbarPage from "./NavbarPage";
 
 const ParaTutores = () => {
   return (
       <Fragment>
+        <NavbarPage />
           <body id="page1">
     <div class="container">
   <h1 class="center">Ganémosle al Virus | Contenidos</h1>
