@@ -1,12 +1,11 @@
 import React, { Fragment } from "react"
 import "../styles/levelOne.css";
-import LevelOneC2 from './LevelOne-C2';
 import ProgressNav from './ProgressNav'
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-
+import info from "../img/infohootie.jpg"
 const levelOne2 = () => {
   const now = 75;
   return (
@@ -20,7 +19,7 @@ const levelOne2 = () => {
           </ProgressBar>  
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">
-              <LevelOneC2/>
+              <img src={info} alt= ""/>
             </div>
           </div>
           <div className="containernextButton">
