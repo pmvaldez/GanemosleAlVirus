@@ -65,6 +65,13 @@
 .progress {
   height: 2rem !important;
   border-radius: 20.5rem !important;
+  width:95%;
+}
+
+.infoimg{
+  width: 80%;
+  height: 474px;
+  margin-top: -23px;
 }
 
 @media (max-width: 468px) {
