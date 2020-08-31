@@ -27,7 +27,7 @@ const levelOne = () => {
               <ProgressBar variant="warning" now={75} key={2} />
             </ProgressBar>  
             <div>
-            <img src={corona} width="25px" />
+            <img src={corona} width="25px" alt=""/>
             </div>
           </div>
           <div className="container text-center mt-4 mb-4">
