@@ -5,9 +5,11 @@ import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import info from "../img/hootieinfo.jpg"
+//import info from "../img/hootieinfo.jpg"
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
+import TabsDefault from './Tabs'
+
 
 const levelOne2 = () => {
   const now = 75;
@@ -30,8 +32,9 @@ const levelOne2 = () => {
           </div>
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">
-              <img src={info} alt= "" className="infoimg"/>
-            </div>
+             {/* <img src={info} alt= "" className="infoimg"/>*/}
+             <TabsDefault/>
+          </div>
           </div>
           <div className="containernextButton">
             <div>
