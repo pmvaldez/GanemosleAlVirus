@@ -7,14 +7,14 @@ const ParaTutores = () => {
       <Fragment>
         <NavbarPage />
           <body id="page1">
-    <div class="container">
-  <h1 class="center">Ganémosle al Virus | Contenidos</h1>
+    <div className="container">
+  <h1 className="center">Ganémosle al Virus | Contenidos</h1>
   
-  <article class="episode">
-    <div class="episode__number">00</div>
-    <div class="episode__content">
-      <div class="title">Inicio</div>
-      <div class="story">
+  <article className="episode">
+    <div className="episode__number">00</div>
+    <div className="episode__content">
+      <div className="title">Inicio</div>
+      <div className="story">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non ipsum ullamcorper, ullamcorper ex.</p>
         <p>Aenean ut nibh ac metus fringilla lacinia eget ac eros. Morbi mi nisl, iaculis vel. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
         <p>Sed lorem leo, lobortis id nunc in, venenatis rhoncus leo. Fusce et tortor euismod, molestie metus at, placerat. </p>
@@ -22,11 +22,11 @@ const ParaTutores = () => {
     </div>
   </article>
   
-  <article class="episode">
-    <div class="episode__number">01</div>
-    <div class="episode__content">
-      <div class="title">Etapa 1</div>
-      <div class="story">
+  <article className="episode">
+    <div className="episode__number">01</div>
+    <div className="episode__content">
+      <div className="title">Etapa 1</div>
+      <div className="story">
         <p>Nunc porta mi eu arcu pulvinar hendrerit. Sed et.</p>
         <p>Quisque sed tortor vel nibh scelerisque blandit. Aliquam id libero semper, efficitur leo vel, egestas odio. Donec placerat malesuada lacus, a convallis odio sagittis. </p>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer eget volutpat ipsum. Nunc facilisis laoreet fringilla. Phasellus nunc libero, placerat ut laoreet id, dictum a leo. Donec gravida quis eros vitae. </p>
@@ -36,11 +36,11 @@ const ParaTutores = () => {
     </div>
   </article>
   
-  <article class="episode">
-    <div class="episode__number">02</div>
-    <div class="episode__content">
-      <div class="title">Etapa 2</div>
-      <div class="story">
+  <article className="episode">
+    <div className="episode__number">02</div>
+    <div className="episode__content">
+      <div className="title">Etapa 2</div>
+      <div className="story">
         <p>Aliquam in tellus vulputate, venenatis sapien sit amet, pharetra purus. Praesent dapibus quam sed tempor dapibus. Maecenas quis lacus sagittis, maximus massa vel. </p>
         <p>Aenean ut nibh ac metus fringilla lacinia eget ac eros. Morbi mi nisl, iaculis vel. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
         <p>Nunc porta mi eu arcu pulvinar hendrerit. Sed et.</p>
@@ -52,11 +52,11 @@ const ParaTutores = () => {
     </div>
   </article>
   
-  <article class="episode">
-    <div class="episode__number">03</div>
-    <div class="episode__content">
-      <div class="title">Etapa 3</div>
-      <div class="story">
+  <article className="episode">
+    <div className="episode__number">03</div>
+    <div className="episode__content">
+      <div className="title">Etapa 3</div>
+      <div className="story">
       <p>Aliquam in tellus vulputate, venenatis sapien sit amet, pharetra purus. Praesent dapibus quam sed tempor dapibus. Maecenas quis lacus sagittis, maximus massa vel. </p>
         <p>Aenean ut nibh ac metus fringilla lacinia eget ac eros. Morbi mi nisl, iaculis vel. Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur.</p>
         <p>Nunc porta mi eu arcu pulvinar hendrerit. Sed et.</p>
