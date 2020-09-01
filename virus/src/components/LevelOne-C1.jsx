@@ -12,11 +12,11 @@ const levelOneContenido1 = () => {
                   alt="hootie"
                 />
               </div>
-              <div className="col-md-4 w-3">
-                <h1>BIENVENIDA/O AL MODULO 1</h1>
-                <p>Hola, soy Hootie y junto a Puma Espuma y el Escuadron Prevención conoceras sobre el Covid-19 y como juntos podemos cuidarnos</p>
-                <p>Pon mucha atención a cada una de las etapas para quitarle la corona al covid y habrá una sorpresa al final</p>
-                <p>Vamos a ganar!!!</p>
+              <div className="col-md-6 w-3 mt-5">
+                <h1 className="contenido-titulo">Bienvenid@ al Módulo 1</h1>
+                <p className="contenido-texto">Hola, soy Hootie y junto a Puma Espuma y el Escuadrón Prevención conocerás sobre el COVID-19 y cómo juntos podemos cuidarnos de él.</p>
+                <p className="contenido-texto">Pon mucha atención a cada una de las siguientes etapas para quitarle la corona al COVID y así obtener una gran sorpresa al final.</p>
+                <p className="contenido-texto">¡Vamos a ganar!</p>
               </div>
             </div>
   )
