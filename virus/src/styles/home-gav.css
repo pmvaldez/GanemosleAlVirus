@@ -7,7 +7,9 @@
     height: 85vh;
     padding: 9rem 0 10rem 0;
 }
-
+.mt-2, .my-2 {
+    margin-top: -2.5rem!important;
+}
 .arrowone {
    margin-top: 5em;
 }
@@ -25,5 +27,9 @@
     .sectionGAV {
         height: 94vh;
     }
-
+    .nav-item.active>.nav-link {
+        background-color: #64259D !important;
+        margin-top: 12px;
+    }
+    
 }

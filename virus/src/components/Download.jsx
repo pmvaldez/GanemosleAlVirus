@@ -4,7 +4,7 @@ import '../styles/download.css'
 import NavbarPage from './NavbarPage'
 import { MDBIcon } from "mdbreact";
 import { Link } from 'react-router-dom';
-
+import '../Files/pintaCovid.pdf'
 const Download = () => {
 
  

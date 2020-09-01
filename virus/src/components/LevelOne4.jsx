@@ -11,7 +11,7 @@ import coronagif from '../img/coronita.gif'
 
 
 const levelOne4 = () => {
-  const now = 25;
+  const now = 100;
 
   return (
     <Fragment> 
@@ -24,7 +24,7 @@ const levelOne4 = () => {
             </div>
             <ProgressBar>
               <ProgressBar animated  striped variant="success" now={now} key={1} />
-              <ProgressBar variant="warning" now={75} key={2} />
+              <ProgressBar variant="warning" key={2} />
             </ProgressBar>  
             <div>
             <img src={corona} width="25px" alt=""/>
