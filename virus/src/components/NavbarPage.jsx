@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, } from "mdbreact";
-import logo from '../img/logotipo.jpg';
+import logo from '../img/logo-ala.png';
 import '../styles/navbar.css';
 import '../index.css';
 
@@ -27,7 +27,7 @@ render() {
   return (
       <MDBNavbar style={bgPink}  dark expand="md">
         <MDBNavbarBrand >
-          <img src={logo} width="150" alt=""/>
+          <img src={logo} className="hootielogo" width="200" alt=""/>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={ this.onClick } />
         <MDBCollapse isOpen = { this.state.collapse } navbar>
