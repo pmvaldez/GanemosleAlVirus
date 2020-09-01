@@ -21,6 +21,7 @@
 }
 .nav-item.active>.nav-link {
     background-color: #64259D !important;
+    margin-left: 12px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border-top-left-radius: 12px;
