@@ -1,5 +1,6 @@
 .nav {
     background-color: #ddc5f9;
+    
 }
 
 .btn-nav {
@@ -8,8 +9,11 @@
 }
 
 .hootielogo {
-    padding-right: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
+
 .navbar {
     font-weight: 300;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.0), 0 0px 0px 0 rgba(0,0,0,0.0) !important; 
@@ -30,3 +34,10 @@
     background: rgba(0, 0, 0, 0.3);
     color: rgba(0, 0, 0, 0.3);
     } */
+
+    
+@media (max-width: 425px) {
+    .hootielogo {
+        width: 50%;
+    }
+}

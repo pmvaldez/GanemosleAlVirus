@@ -29,7 +29,6 @@ const LevelOne = () => {
     <Fragment> 
       <div className="d-flex backgroundimg">
         <div className="section-mod1-general">    
-          {/* <ProgressNav/>  */}
           <div className="prog-bar-content d-flex pl-4 flex-wrap">
             <div className="processBar">
               <div >
@@ -37,13 +36,12 @@ const LevelOne = () => {
               </div>
               <ProgressBar>
                 <ProgressBar animated  striped variant="success" now={now} key={1} />
-                <ProgressBar variant="warning" now={75} key={2} />
+                <ProgressBar variant="info" now={75} key={2} />
               </ProgressBar>  
               <div>
               <img src={corona} width="50px" alt=""/>
               </div>
-            </div>
-            
+          </div>
             <div> <img src={logoGAV} className="logoGame" alt="..." /></div>
           </div>
           <div className="container text-center mt-4 mb-4">
