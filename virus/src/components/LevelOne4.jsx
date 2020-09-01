@@ -20,7 +20,7 @@ const levelOne4 = () => {
           <ProgressNav/> 
           <div className="d-flex pl-4">
              <div>
-            <img src={covid} width="25px" alt=""/>
+                <img src={covid} width="25px" alt=""/>
             </div>
             <ProgressBar>
               <ProgressBar animated  striped variant="success" now={now} key={1} />

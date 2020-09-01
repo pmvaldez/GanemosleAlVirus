@@ -74,6 +74,10 @@
   line-height: 2rem;
 }
 
+.modalName{
+  background-color: teal;
+}
+
 @media (max-width: 468px) {
   .whitebox {
     width: 100% !important;

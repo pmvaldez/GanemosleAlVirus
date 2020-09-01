@@ -8,9 +8,19 @@ import LevelOneC1 from './LevelOne-C1'
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
+import { Modal } from 'react-bootstrap';
+
+const LevelOne = () => {
+  const [show, setShow] = React.useState(true);
+  const [name, setDatos] = React.useState('')
+  
+  const handleClose = () => setShow(false);
+
+  const handleInputChange = (event) => {  
+    setDatos(event.target.value)
+  }
 
 
-const levelOne = () => {
   const now = 25;
 
   return (
@@ -32,7 +42,7 @@ const levelOne = () => {
           </div>
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">
-              <LevelOneC1/>
+              <LevelOneC1 name={name}/>
             </div>
           </div>
           <div className="containernextButton">
@@ -46,10 +56,22 @@ const levelOne = () => {
       </div>        
     </div>
       <Footer />
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton className="modalName">
+          <Modal.Title>Holiwis</Modal.Title>
+        </Modal.Header >
+        <Modal.Body className="modalName">Ingresa tu nombre: <input type="text" placeholder="Nombre" className="form-control" onChange={handleInputChange} name="nombre"></input>
+        </Modal.Body>
+        <Modal.Footer className="modalName">
+          <button variant="primary" onChange={handleInputChange} onClick={handleClose}>
+            Guardar
+          </button>
+        </Modal.Footer>
+      </Modal>
    </Fragment>  
   );
 };
 
-export default levelOne;
+export default LevelOne;
 
 
