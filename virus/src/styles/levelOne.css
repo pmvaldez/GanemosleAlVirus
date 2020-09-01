@@ -1,15 +1,3 @@
-/* html {
-  background: url("../img/fondo1.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
-
-.soygel {
-  font-family: "RoundedElegance", Arial, Helvetica, sans-serif;
-}
-
 .whitebox {
   width: 100%;
   height: 475px;
@@ -55,7 +43,7 @@
         } 
         
 .backgroundimg {
-    background: url("../img/fondo1.png") no-repeat center center fixed;
+    background: url("../img/fondo2.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -72,6 +60,18 @@
   width: 80%;
   height: 474px;
   margin-top: -23px;
+}
+
+.contenido-titulo {
+  font-family: 'RoundedElegance', sans-serif;
+  color: #662499;
+  font-size: 2.6rem;
+}
+
+.contenido-texto {
+  font-family: 'HelveticaRoman';
+  font-size: 1.1rem;
+  line-height: 2rem;
 }
 
 @media (max-width: 468px) {

@@ -3,12 +3,6 @@
   src: local('RoundedElegance'), url('./fonts/Rounded_Elegance.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'HelveticaNeueRoman';
-  src: local('HelveticaNeueRoman'), url('./fonts/HelveticaNeueLTStd-Roman.otf') format('opentype');
-}
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
