@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-import ProgressNav from './ProgressNav'
+//import ProgressNav from './ProgressNav'
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
