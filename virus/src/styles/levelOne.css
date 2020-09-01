@@ -1,6 +1,6 @@
 .whitebox {
   width: 100%;
-  height: 475px;
+  height: 72vh;
   background-color: #ffffff;
   border-radius: 32px 32px 32px 32px;
   -moz-border-radius: 32px 32px 32px 32px;
@@ -37,10 +37,10 @@
   padding-right: 24px;
   top: 45%;
 }
-         .btnNext{      
-          width: 100px;
-          height: 100px;    
-        } 
+.btnNext{      
+  width: 100px;
+  height: 100px;    
+} 
         
 .backgroundimg {
     background: url("../img/fondo2.png") no-repeat center center fixed;
@@ -48,7 +48,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 100%;
+  height: 92.3vh;;
 }
 .progress {
   height: 2rem !important;
@@ -78,12 +78,76 @@
   background-color: teal;
 }
 
-@media (max-width: 468px) {
-  .whitebox {
-    width: 100% !important;
-    height: 250px !important;
+.processBar{
+  width: 75%;
+  margin-top: 20px;
+  display:flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
 }
 
+.logoGame{
+  float: right;
+  width: 200px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+
+}
+
+@media (max-width: 425px) {
+  .whitebox {
+    width: 100% ;
+    height: 68vh ;
+}
+  .logoGame{
+    order: 1;
+    float: none;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 100px;
+  }
+
+  .processBar{
+    order:2;
+    width: 95%;
+    margin-top: 1px;
+  }
+
+  .prog-bar{
+    justify-content: center;
+    align-items: center;
+  }
+  .prog-bar-content {
+    height: 19vh !important;
+  }
+  .backgroundimg{
+    height:94vh;
+  }
+  .prog-bar-content {
+      width: 100vw;
+      height: 19vh;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.3);
+      color: rgba(0, 0, 0, 0.3);
+  }
+  .hootieC1{
+    width: 130px;
+  }
+  .contTextC1{
+    top: -46px;
+  }
+  .contenido-titulo{
+    font-size: 28px;
+  }
+  .btnNext{      
+    width: 50px;
+    height: 50px;    
+  } 
+  .containernextButton {
+    top: 34%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .whitebox {

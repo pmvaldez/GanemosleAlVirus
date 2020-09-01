@@ -7,11 +7,13 @@ import atras from '../img/BotonIzquierd.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
-import coronagif from '../img/coronita.gif'
+//import coronagif from '../img/coronita.gif'
 
 
-const levelOne4 = () => {
-  const now = 25;
+const LevelOne4 = (props) => {
+  console.log('diploma',props.name)
+
+  const now = 100;
 
   return (
     <Fragment> 
@@ -24,16 +26,18 @@ const levelOne4 = () => {
             </div>
             <ProgressBar>
               <ProgressBar animated  striped variant="success" now={now} key={1} />
-              <ProgressBar variant="warning" now={75} key={2} />
+              <ProgressBar variant="warning" now={0} key={2} />
             </ProgressBar>  
             <div>
             <img src={corona} width="25px" alt=""/>
             </div>
           </div>
           <div className="container text-center mt-4 mb-4">
-            <div class="p-4 ">
-              <img src={coronagif} alt="" className="infoimg"/>
-            </div>
+             <div className="p-4 whitebox" >
+              {/* <img src={coronagif} alt="" className="infoimg"/> */}
+                  <h1>Felicitaciones</h1>
+                  <h2>Nombre:{props.name}</h2>
+                </div>
           </div>
           <div className="containernextButton">
             <div>
@@ -50,4 +54,4 @@ const levelOne4 = () => {
   );
 };
 
-export default levelOne4;
+export default LevelOne4;

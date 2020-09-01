@@ -29,7 +29,7 @@ const levelOne2 = () => {
             </div>
           </div>
           <div className="container text-center mt-4 mb-4">
-            <div class="p-4 whitebox">
+            <div className="p-4 whitebox">
               <img src={info} alt= "" className="infoimg"/>
             </div>
           </div>

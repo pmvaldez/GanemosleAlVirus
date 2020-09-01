@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-import ProgressNav from './ProgressNav'
+/*  import ProgressNav from './ProgressNav'  */
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
@@ -9,6 +9,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
 import { Modal } from 'react-bootstrap';
+import '../styles/progressbar.css';
+import logoGAV from '../img/GAV_logo.png';
 
 const LevelOne = () => {
   const [show, setShow] = React.useState(true);
@@ -17,9 +19,9 @@ const LevelOne = () => {
   const handleClose = () => setShow(false);
 
   const handleInputChange = (event) => {  
-    setDatos(event.target.value)
+    const usuario= event.target.value
+    setDatos(usuario)
   }
-
 
   const now = 25;
 
@@ -27,21 +29,25 @@ const LevelOne = () => {
     <Fragment> 
       <div className="d-flex backgroundimg">
         <div className="section-mod1-general">    
-          <ProgressNav/> 
-          <div className="d-flex pl-4">
-             <div>
-            <img src={covid} width="25px" alt=""/>
+          {/* <ProgressNav/>  */}
+          <div className="prog-bar-content d-flex pl-4 flex-wrap">
+            <div className="processBar">
+              <div >
+              <img src={covid} width="50px" alt=""/>
+              </div>
+              <ProgressBar>
+                <ProgressBar animated  striped variant="success" now={now} key={1} />
+                <ProgressBar variant="warning" now={75} key={2} />
+              </ProgressBar>  
+              <div>
+              <img src={corona} width="50px" alt=""/>
+              </div>
             </div>
-            <ProgressBar>
-              <ProgressBar animated  striped variant="success" now={now} key={1} />
-              <ProgressBar variant="warning" now={75} key={2} />
-            </ProgressBar>  
-            <div>
-            <img src={corona} width="25px" alt=""/>
-            </div>
+            
+            <div> <img src={logoGAV} className="logoGame" alt="..." /></div>
           </div>
           <div className="container text-center mt-4 mb-4">
-            <div class="p-4 whitebox">
+            <div className="p-4 whitebox">
               <LevelOneC1 name={name}/>
             </div>
           </div>
@@ -55,6 +61,8 @@ const LevelOne = () => {
           </div>   
       </div>        
     </div>
+    
+       
       <Footer />
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton className="modalName">
