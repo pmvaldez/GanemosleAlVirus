@@ -9,6 +9,8 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
 import TabsDefault from './Tabs'
+import '../styles/progressbar.css';
+import logoGAV from '../img/GAV_logo.png';
 
 
 const levelOne2 = () => {
@@ -17,18 +19,20 @@ const levelOne2 = () => {
     <Fragment> 
       <div className="d-flex backgroundimg">
         <div className="section-mod1-general">    
-          <ProgressNav/> 
-          <div className="d-flex pl-4">
-             <div>
-                <img src={covid} width="25px" alt=""/>
-            </div>
-            <ProgressBar>
-              <ProgressBar animated  striped variant="success" now={now} key={1} />
-              <ProgressBar variant="warning" now={75} key={2} />
-            </ProgressBar>  
-            <div>
-            <img src={corona} width="25px" alt=""/>
-            </div>
+        <div className="prog-bar-content d-flex pl-4 flex-wrap">
+            <div className="processBar">
+              <div >
+              <img src={covid} width="50px" alt=""/>
+              </div>
+              <ProgressBar>
+                <ProgressBar animated  striped variant="success" now={now} key={1} />
+                <ProgressBar variant="info" now={75} key={2} />
+              </ProgressBar>  
+              <div>
+              <img src={corona} width="50px" alt=""/>
+              </div>
+          </div>
+            <div> <img src={logoGAV} className="logoGame" alt="..." /></div>
           </div>
           <div className="container text-center mt-4 mb-4">
             <div class="p-4 whitebox">

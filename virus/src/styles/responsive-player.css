@@ -1,6 +1,6 @@
 .player-wrapper {
-    position: relative;
-    padding-top: 38% /* Player ratio: 100 / (1280 / 720) */
+  position: relative;
+  padding-top: 38% /* Player ratio: 100 / (1280 / 720) */
   }
   
   .react-player {
@@ -8,3 +8,12 @@
     top: 0;
     left: 0;
   }
+
+  @media (max-width: 425px) {
+    .player-wrapper{
+      top: 50px;
+    }
+    .ytp-cued-thumbnail-overlay-image {
+      height: 70%;
+    }
+  } 
