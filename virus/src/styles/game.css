@@ -1,6 +1,11 @@
 .img {
     background-image: url('../img/GAV_Personaje31.png');
 }
-.stage-header_embed-scratch-logo_2K5GA img {
-    height: 0rem !important;
+
+
+@media (max-width: 425px) {
+    .game {
+        width: 385!important;
+        height: 302!important;
+    }
 }
