@@ -9,6 +9,8 @@ import corona from '../img/corona.png'
 import covid4 from '../img/covid4.png'
 import coronaWinner from '../img/coronita.gif'
 import logoGAV from '../img/GAV_logo.png';
+import escuadrondiplo from '../img/GAV_Personaje10.png'
+import ribbon from '../img/award-solid.svg'
 import { Modal } from 'react-bootstrap';
 
 const LevelOne4 = () => {
@@ -48,11 +50,23 @@ const LevelOne4 = () => {
              <div className="p-4 whitebox" >
              <button className="btn btnModal " onClick={handleOpen}>
            Cambiar Nombre
-          </button>   
-                  <h1>Diploma</h1>
-                  <h2>Se otorga el presente certificado a:</h2>
-                  <h2>{user}</h2>
-                  <h2>Por haber obtenido la primera corona en el modulo 1</h2>
+          </button>
+
+          <div className="alert alert-primary diploma p-5">
+
+          <img src={ribbon} className="ribbon" width="30" alt="..." />
+          <h1 className="diplo-title">Diploma</h1>
+
+        
+                  <h2 className="diplo-title1">Se otorga el presente certificado a:</h2>
+                  <h2 className="diplo-nombre">{user}</h2>
+                  <h2 className="diplo-title1">Por haber obtenido la primera corona en el Módulo 1.</h2>
+
+                  <img src={escuadrondiplo} className="img-fluid escuadronprev" width="200" alt="..." />
+  </div>
+
+
+                  
                   <img src={covid4} className="logoGame" alt="..." />
                 </div>
           </div>
