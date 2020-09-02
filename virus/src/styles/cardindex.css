@@ -16,7 +16,6 @@
 }
 .arrowone {
     margin-top: 5em;
-
  }
 .card-text {
 font-family: 'HelveticaRoman';
@@ -26,7 +25,11 @@ font-size: 1.3rem;
     font-family: 'HelveticaRoman';
     font-size: 1.8rem;    
 }
-
+@media (max-width: 375px) {
+.arrowone {
+    margin-top: 1em;
+ }
+}
 
 @media (max-width: 450px) {
     .contCard{

@@ -25,7 +25,7 @@ const levelOne2 = () => {
               </div>
               <ProgressBar>
                 <ProgressBar animated  striped variant="success" now={now} key={1} />
-                <ProgressBar variant="info" now={75} key={2} />
+                <ProgressBar variant="info" now={25} key={2} />
               </ProgressBar>  
               <div>
               <img src={corona} width="50px" alt=""/>

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'RoundedElegance';
+  src: local('RoundedElegance'), url('../fonts/Rounded_Elegance.ttf') format('truetype');
+
+  font-family: 'HelveticaRoman';
+  src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+}
 .whitebox{
   width: 100%;
   height: 72vh;
@@ -44,7 +51,7 @@
 } 
         
 .backgroundimg {
-    background: url("../img/fondo2.png") no-repeat center center fixed;
+   background: url("../img/fondo2.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -76,7 +83,32 @@
 }
 
 .modalName{
-  background-color: teal;
+  background: url("../img/fondo2.png") no-repeat center center fixed;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.textModal{
+  font-family: 'HelveticaRoman';
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.btnModal{
+  background-color: rgb(2, 196, 255);
+  border-radius: 50px;
+  font-family: 'HelveticaRoman';
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.coronaW{
+  width: 300px;
+  border-radius: 20px;
 }
 
 .processBar{
@@ -95,75 +127,137 @@
   margin-left: 3rem;
 
 }
+.hootieC1{
+  width: 80%;
+  margin-top: 55px;
+  margin-left: 35px;
+}
 
+@media (max-width: 375px) {
+  .fab-container {
+    top: 15em;
+    z-index: 1;
+    right: -1vh;
+    }
+    .contEscuadron {
+      margin-top: -4px;
+    }
+    .jabon {
+      width: 100px;
+      margin-left: -34px;
+    }
+}
+/*Responsive Celular L*/
 @media (max-width: 425px) {
-  .whitebox {
-    width: 100% ;
-    height: 68vh ;
+        .whitebox {
+          width: 100% ;
+          height: 68vh ;
+        }
+        .whitebox3 {
+          width: 100%;
+          height: 72vh;
+          background-color:none;
+        }
+        .logoGame{
+          order: 1;
+          float: none;
+          margin-top: 10px;
+          margin-right: 20px;
+          margin-left: 100px;
+        }
+        .processBar{
+          order:2;
+          width: 95%;
+          margin-top: 1px;
+        }
+        .prog-bar{
+          justify-content: center;
+          align-items: center;
+        }
+        .prog-bar-content {
+          height: 19vh !important;
+        }
+        .backgroundimg{
+          height:94vh;
+        }
+        .prog-bar-content {
+            width: 100vw;
+            height: 19vh;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.3);
+            color: rgba(0, 0, 0, 0.3);
+        }
+        .hootieC1{
+          width: 130px;
+          margin-top: 0px;
+        }
+        .contTextC1{
+          top: -46px;
+        }
+        .contenido-titulo{
+          font-size: 28px;
+        }
+        .btnNext{      
+          width: 50px;
+          height: 50px;    
+        } 
+        .containernextButton {
+          top: 34%;
+        }
 }
-.whitebox3 {
-  width: 100%;
-  height: 72vh;
-  background-color:none;
-}
+
+@media (min-width: 426px) and (max-width: 762px) {
+  .hootieC1{
+    width: 50%;
+    margin-top: 110px;
+    margin-left: 44px;
+  }
   .logoGame{
     order: 1;
     float: none;
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 100px;
   }
-
   .processBar{
     order:2;
     width: 95%;
     margin-top: 1px;
   }
-
-  .prog-bar{
+  .prog-bar-content {
+    height: 19vh;
     justify-content: center;
     align-items: center;
   }
-  .prog-bar-content {
-    height: 19vh !important;
-  }
-  .backgroundimg{
-    height:94vh;
-  }
-  .prog-bar-content {
-      width: 100vw;
-      height: 19vh;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.3);
-      background: rgba(0, 0, 0, 0.3);
-      color: rgba(0, 0, 0, 0.3);
-  }
-  .hootieC1{
-    width: 130px;
-  }
-  .contTextC1{
-    top: -46px;
-  }
-  .contenido-titulo{
-    font-size: 28px;
-  }
-  .btnNext{      
-    width: 50px;
-    height: 50px;    
-  } 
-  .containernextButton {
-    top: 34%;
-  }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+
+/*Tablet*/
+@media (min-width: 763px) and (max-width: 991px) {
   .whitebox {
     width: 100% !important;
-    height: 250px !important;
+    height: 73vh !important;
+}
+.backgroundimg {
+  height: 94.3vh;
+}
+.hootieC1{
+  width: 100%;
+  margin-top: 110px;
+  margin-left: 44px;
+}
+.processBar{
+  width: 60%;
+  margin-top: 1px;
+}
+.logofooter {
+  width: 81%;
 }
 }
-/* @media (min-width: 992px) {
-  .whitebox {
-    width: 100% !important;
-    height: 250px !important;
+ @media (min-width: 1024px) {
+  .backgroundimg {
+    height: 94.3vh !important;
 }
-} */
+  .context {
+
+    padding-top: 12px !important;
+    font-size: 1.2rem !important;
+  }
+}
