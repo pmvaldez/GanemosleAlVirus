@@ -62,8 +62,32 @@
     border: 0;
     border-radius: 3.125rem;
 }
-
-@media (min-width:320px) and (max-width: 450px) {
+.imgGuantrini{
+    width: 200px;
+}
+.imgPuma{
+    width: 200px;
+}
+.imgJabon{
+    width: 200px;
+}
+@media (max-width: 375px) {
+.btn {
+    margin: -0.625rem !important;
+    padding: 0.16rem 2.14rem !important;
+    height: 33vh !important;
+}
+.imgGuantrini{
+    width: 100px !important;
+}
+.imgPuma{
+    width: 130px;
+}
+.imgJabon{
+    width: 100px;
+}
+}
+@media /* (min-width:320px) and */ (max-width: 450px) {
     .btn {
       padding: 1.16rem 2.14rem !important;
       height: 29vh;
@@ -100,5 +124,21 @@
     }
     .jabon{
         width: 100px;
+    }
+}
+
+
+@media (min-width: 763px) and (max-width: 991px) {
+    .puma {
+        width: 150px;
+    }
+    .jabon{
+        width: 100px;
+    }
+    .btn {
+       margin: 1.37rem !important;
+    }
+    .arrowone {
+        margin-top: 3em !important;
     }
 }

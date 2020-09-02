@@ -9,7 +9,7 @@ const HomeGAV = () => {
         <div>
         <img src={logoGAV} className="img-fluid mt-2 logogav" alt="Responsiveimg" />
         </div>
-        <div className="arrowone">
+        <div className="arrowoneGAV">
         <a href="#card" className="arrow"><img src={arrow} alt=""/></a>
         </div>           
       </div>

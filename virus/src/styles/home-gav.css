@@ -8,7 +8,7 @@
     padding: 9rem 0 10rem 0;
 }
 
-.arrowone {
+.arrowoneGAV {
    margin-top: 5em;
 }
 
@@ -16,11 +16,44 @@
     margin-top: 90px;
     width: 900px; 
 }
-
-
+@media (max-width: 375px) {
+.arrowoneGAV {
+    margin-top: 15em;
+}
+}
 @media (max-width: 450px) {
     .sectionGAV {
         height: 94vh;
     }
 
+}
+
+@media (min-width: 763px) and (max-width: 991px) {
+    .sectionGAV {
+        height: 90vh;
+    }
+     .contCard {
+        padding: 1rem !important;
+    }
+    .sectionTeam {
+        height: 92vh !important;
+       padding: 3rem 0 10rem 0 !important;
+    }
+    .fab-container {
+        margin: -2em !important;
+        right: 8vw !important;
+    }
+    .context {
+        padding-top: 12px !important;
+        font-size: 1.1rem !important;
+    }
+}
+
+@media (min-width: 763px) and (max-width: 991px) {
+    .team {
+        margin-left: 18px;
+    }
+    .puma{
+        width: 200px;
+    }
 }

@@ -32,7 +32,7 @@ render() {
           <div className="d-flex flex-row flex-wrap justify-content-center align-item-center contEscuadron">
             <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team tomask" alt="tomask" width="150" /></MDBBtn>
             <MDBBtn color="btn-primary-outline" onClick={this.toggle(3)}><img src={guantrini} className="team guantrini" alt="guantrini" width="120" /></MDBBtn>
-            <MDBBtn color="btn-primary-outline" onClick={this.toggle(4)} /* style={{height: '60vh'}} */ ><img src={puma} className="team puma" alt="puma" width="250"/></MDBBtn>
+            <MDBBtn color="btn-primary-outline" onClick={this.toggle(4)} /* style={{height: '60vh'}} */ ><img src={puma} className="team puma" alt="puma" width="200"/></MDBBtn>
             <MDBBtn color="btn-primary-outline" onClick={this.toggle(5)}><img src={jabon} className="team jabon" alt="jabon jabier" width="130" /></MDBBtn>   
           </div>
         </div>
@@ -63,7 +63,7 @@ render() {
             {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
             <span className="btnModal" onClick={this.toggle(3)}>&times;</span>
             <div className="d-flex flex-row contInfo" >
-                <div className="imghootie"><img src={guantrini} alt="Responsiveimg" width="200"/></div>
+                <div className="imghootie"><img src={guantrini} alt="Responsiveimg" className="imgGuantrini" width="200"/></div>
                 <div className="textarea">
                 <h1 className="text-center" style={{fontWeight:'bold'}}>Guantrini</h1>
                 <p style={{fontWeight:'bold'}}>Personalidad:</p>  
@@ -83,7 +83,7 @@ render() {
             {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
             <span className="btnModal" onClick={this.toggle(4)}>&times;</span>
             <div className="d-flex flex-row contInfo" >
-                <div className="imghootie"><img src={puma} alt="Responsiveimg" width="200"/></div>
+                <div className="imghootie"><img src={puma} alt="Responsiveimg" className="imgPuma"/></div>
                 <div className="textarea">
                 <h1 className="text-center" style={{fontWeight:'bold'}}>Puma Espuma</h1>
                 <p style={{fontWeight:'bold'}}>Personalidad:</p>  
@@ -105,7 +105,7 @@ render() {
             {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
             <span className="btnModal" onClick={this.toggle(5)}>&times;</span>
             <div className="d-flex flex-row contInfo" >
-                <div className="imghootie"><img src={jabon} alt="Responsiveimg" width="200"/></div>
+                <div className="imghootie"><img src={jabon} alt="Responsiveimg" className="imgJabon"/></div>
                 <div className="textarea">
                 <h1 className="text-center" style={{fontWeight:'bold'}}>Jabier Jabón</h1>
                 <p style={{fontWeight:'bold'}}>Personalidad:</p>  

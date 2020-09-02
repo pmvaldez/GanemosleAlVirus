@@ -1,19 +1,28 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-import ProgressNav from './ProgressNav'
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import covid from '../img/covid.png'
 import corona from '../img/corona.png'
+import covid4 from '../img/covid4.png'
+import coronaWinner from '../img/coronita.gif'
 import logoGAV from '../img/GAV_logo.png';
-//import coronagif from '../img/coronita.gif'
+import { Modal } from 'react-bootstrap';
 
+const LevelOne4 = () => {
+ /*  console.log('diploma',props.name) */
+ const [show, setShow] = React.useState(true);
+ const [user, setUser] = React.useState('')
+ 
+ const handleClose = () => setShow(false);
+ const handleOpen = () => setShow(true);
 
-const LevelOne4 = (props) => {
-  console.log('diploma',props.name)
-
+ const handleInputChange = (event) => { 
+     event.preventDefault()
+     setUser(event.target.value)
+ }
   const now = 100;
 
   return (
@@ -27,7 +36,7 @@ const LevelOne4 = (props) => {
               </div>
               <ProgressBar>
                 <ProgressBar animated  striped variant="success" now={now} key={1} />
-                <ProgressBar variant="info" now={75} key={2} />
+                <ProgressBar variant="info"  key={2} />
               </ProgressBar>  
               <div>
               <img src={corona} width="50px" alt=""/>
@@ -37,9 +46,14 @@ const LevelOne4 = (props) => {
           </div>
           <div className="container text-center mt-4 mb-4">
              <div className="p-4 whitebox" >
-              {/* <img src={coronagif} alt="" className="infoimg"/> */}
-                  <h1>Felicitaciones</h1>
-                  <h2>Nombre:{props.name}</h2>
+             <button className="btn btnModal " onClick={handleOpen}>
+           Cambiar Nombre
+          </button>   
+                  <h1>Diploma</h1>
+                  <h2>Se otorga el presente certificado a:</h2>
+                  <h2>{user}</h2>
+                  <h2>Por haber obtenido la primera corona en el modulo 1</h2>
+                  <img src={covid4} className="logoGame" alt="..." />
                 </div>
           </div>
           <div className="containernextButton">
@@ -50,9 +64,29 @@ const LevelOne4 = (props) => {
             <a href="/"><img src={adelante} alt="" className="btnNext"/></a>
             </div>
           </div>   
-      </div>        
+      </div>     
     </div>
       <Footer />
+      <Modal show={show} onHide={handleClose}>
+         <Modal.Body className="modalName" closeButton>
+        <Modal.Title>¡Felicitaciones!</Modal.Title>
+          <div>
+          <img src={coronaWinner} className="coronaW" alt=""/>
+          </div>
+          <div>
+          <p className="textModal">Ingresa tu nombre: </p>
+          </div>
+          <div>
+          <form onSubmit={handleInputChange}>
+            <input type="text" placeholder="Nombre" className="form-control" onChange={ e => setUser(e.target.value) } value={user}></input>
+          </form>
+        </div>
+        <button className="btn btnModal " onChange={handleInputChange} onClick={handleClose}>
+            Guardar
+          </button>
+        </Modal.Body>
+      </Modal>
+
    </Fragment>  
   );
 };

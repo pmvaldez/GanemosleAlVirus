@@ -27,10 +27,10 @@ render() {
   return (
     <div className="conthootie text-center">
         {/* <h1 className="text-center">¿Que es?</h1> */}
-        <img src={QueEs} className="img-fluid" alt="Responsiveimg" width='300' />
+        <img src={QueEs} className="img-fluid imgWhat" alt="Responsiveimg" width='300' />
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
             <div className="d-flex flex-row flex-wrap">
-              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={hootie}  className="team " alt="jabon jabier" width="200" height="200"/></MDBBtn>
+              <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={hootie}  className="team hootieWhat" alt="" width="200" height="200"/></MDBBtn>
            </div>
            </div>
     <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
