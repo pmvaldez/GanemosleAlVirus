@@ -4,7 +4,7 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     padding: 9rem 0 10rem 0;
 }
 .arrowoneGAV {
@@ -18,15 +18,16 @@
 .arrowoneGAV {
     margin-top: 15em;
 }
+.logogav {
+    margin-top: 90px;
+    width: 320px; 
 }
-@media (max-width: 450px) {
+}
+@media (min-width: 450px) {
     .sectionGAV {
         height: 94vh;
     }
-    .nav-item.active>.nav-link {
-        background-color: #64259D !important;
-        margin-top: 12px;
-    }
+
     
 }
 

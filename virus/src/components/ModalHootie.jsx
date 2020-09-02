@@ -35,8 +35,9 @@ render() {
            </div>
     <MDBModal isOpen={this.state.modal2} toggle={this.toggle(2)}>
             <MDBModalBody className="modalHottie" >
-            {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
             <span className="btnModal" onClick={this.toggle(2)}>&times;</span>
+            {/* <MDBBtn color="secondary" className="btnModal" onClick={this.toggle(2)}>&times;</MDBBtn> */}
+            
             <div className="d-flex flex-row contInfo" >
                 <div className="imghootie"><img src={hootieTall} alt="Responsiveimg" width="200"/></div>
                 <div className="textarea">

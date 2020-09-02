@@ -99,11 +99,12 @@
   font-weight: 400;
 }
 .btnModal{
-  background-color: rgb(2, 196, 255);
+  background-color:transparent;
   border-radius: 50px;
   font-family: 'HelveticaRoman';
-  font-size: 0.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
+  margin-bottom: -40px;
 }
 
 .coronaW{
@@ -135,9 +136,9 @@
 
 @media (max-width: 375px) {
   .fab-container {
-    top: 15em;
+    top: 13em;
     z-index: 1;
-    right: -1vh;
+    right: 0vh;
     }
     .contEscuadron {
       margin-top: -4px;

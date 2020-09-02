@@ -3,7 +3,7 @@
     background: url('../img/fondo2.png');
     background-size: 100%;
     font-family: 'HelveticaRoman';
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-bottom-left-radius: 2.125rem !important;
     border-bottom-right-radius: 2.125rem !important;
     border-top-left-radius: 2.125rem !important;
@@ -72,11 +72,15 @@
     }
     .contInfo{
         display: flex;
+        width: 21rem;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
     .imghootie{
         margin-top: 0px;
+    }
+    .textarea{
+        padding: 12px;
     }
   }
