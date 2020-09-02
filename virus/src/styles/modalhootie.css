@@ -1,6 +1,6 @@
 
 .modalHottie {
-    background: url('../img/yellow.png');
+    background: url('../img/fondo2.png');
     background-size: 100%;
     font-family: 'HelveticaRoman';
     font-size: 1.2rem;
@@ -10,9 +10,8 @@
     border-top-right-radius: 2.125rem !important;
 }
 .modalHotti {
-    background: url('../img/yellow.png');
+    background: url('../img/fondo2.png');
      background-size: 100%; 
-
 }
 
 .textarea{
@@ -51,7 +50,18 @@
     border: 0;
     border-radius: 3.125rem;
 } 
-
+@media (max-width: 375px) {
+    .hootieWhat{
+        width:160px;
+        height:160px;
+    }
+    .imgWhat{
+        width: 60%;
+    }
+    .arrowoneWhat {
+        margin-top: 0.3em;
+    }
+}
 @media (max-width: 450px) {
     .conthootie{
         width: 100%;
