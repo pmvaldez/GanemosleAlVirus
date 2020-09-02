@@ -1,3 +1,23 @@
-.navs {
+    .navs {
     background-color: #64259D;
+}
+    .titulo {
+    font-family: 'RoundedElegance', sans-serif;
+    color: #662499;
+    font-size: 2.6rem;
+  }
+    .text {
+    font-family: 'HelveticaRoman';
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+  .row {
+    justify-content: center;
+    /*align-items: center;*/
+  }
+
+@media (max-width: 425px){
+    .puma{
+        width: 130px;
+      }    
 }
