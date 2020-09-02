@@ -7,11 +7,9 @@
     height: 85vh;
     padding: 9rem 0 10rem 0;
 }
-
 .arrowoneGAV {
    margin-top: 5em;
 }
-
 .logogav {
     margin-top: 90px;
     width: 900px; 
@@ -25,7 +23,11 @@
     .sectionGAV {
         height: 94vh;
     }
-
+    .nav-item.active>.nav-link {
+        background-color: #64259D !important;
+        margin-top: 12px;
+    }
+    
 }
 
 @media (min-width: 763px) and (max-width: 991px) {
