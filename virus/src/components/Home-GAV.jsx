@@ -7,7 +7,7 @@ const HomeGAV = () => {
     return (
       <div className="sectionGAV">
         <div>
-        <img src={logoGAV} className="img-fluid mt-2 logogav" alt="Responsiveimg" />
+        <img src={logoGAV} className="img-fluid mt-3 logogav" alt="Responsiveimg" />
         </div>
         <div className="arrowoneGAV">
         <a href="#card" className="arrow"><img src={arrow} alt=""/></a>

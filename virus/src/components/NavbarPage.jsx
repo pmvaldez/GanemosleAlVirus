@@ -27,13 +27,13 @@ render() {
   return (
       <MDBNavbar style={bgPink}  dark expand="md">
         <MDBNavbarBrand >
-          <img src={logo} className="hootielogo" width="200" alt=""/>
+          <img src={logo} className="hootielogo" width="250" alt=""/>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={ this.onClick } />
         <MDBCollapse isOpen = { this.state.collapse } navbar>
           <MDBNavbarNav right>
             <MDBNavItem active>
-            <MDBNavLink  to="/Tutores">TUTORES</MDBNavLink>
+            <MDBNavLink  to="/Tutores">PARA TUTORES</MDBNavLink>
             </MDBNavItem>
             <MDBNavItem active>
             <MDBNavLink  to="/Descargables">DESCARGABLES</MDBNavLink>

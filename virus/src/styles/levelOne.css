@@ -87,11 +87,12 @@
   font-weight: 400;
 }
 .btnModal{
-  background-color: rgb(2, 196, 255);
+  background-color:transparent;
   border-radius: 50px;
   font-family: 'HelveticaRoman';
-  font-size: 0.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
+  margin-bottom: -40px;
 }
 
 .coronaW{
@@ -152,11 +153,49 @@
   font-size: 1.8rem !important;
 }
 
-@media (min-width: 360px) and (max-width: 424px){
+.diploma {
+  background-color: #f4f4ff !important;
+  width: 80%;
+  height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: 8px solid #ddc5f9;
+        outline-offset: -30px;
+}
+
+.diplo-title {
+  font-family: 'RoundedElegance';
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  color: #662499;
+  margin-bottom: 30px;
+}
+
+.diplo-nombre {
+  font-family: 'RoundedElegance';
+  letter-spacing: 0.1em;
+  text-transform: capitalize;
+  font-size: 4rem;
+  color: #662499;
+}
+
+.diplo-title1{
+  font-family: 'HelveticaRoman';
+  font-size: 1.4rem;
+  color: #292c30;
+}
+
+.ribbon {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 375px) {
   .fab-container {
-    top: 15em;
+    top: 13em;
     z-index: 1;
-    right: -1vh;
+    right: 0vh;
     }
     .contEscuadron {
       margin-top: -4px;

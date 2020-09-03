@@ -1,3 +1,7 @@
+@font-face{
+    font-family: 'HelveticaRoman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+}  
 .nav {
     background-color: #ddc5f9;
     
@@ -20,24 +24,35 @@
     padding: 1.3rem 2rem !important;
 }
 .nav-item.active>.nav-link {
-    background-color: #64259D !important;
+    background-color: rgb(100 37 157 / 80%) !important;
+    margin-left: 12px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
-/* .progress {
-    width: 100vw;
-    height: 13vh;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    background: rgba(0, 0, 0, 0.3);
-    color: rgba(0, 0, 0, 0.3);
-    } */
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    font-family: 'HelveticaRoman' !important;
+    letter-spacing: 0.1px !important;
+}
 
     
 @media (max-width: 425px) {
     .hootielogo {
         width: 50%;
+    }
+    .nav-item.active>.nav-link {
+        background-color: rgb(111 54 163 / 43%) !important;
+        margin-left: 100px;
+        margin-bottom: 7px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+        color: #6a1b9a !important;
+        font-family: 'HelveticaRoman' !important;
+        transition: .35s;
     }
 }

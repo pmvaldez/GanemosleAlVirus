@@ -37,7 +37,10 @@ font-size: 1.3rem;
        padding: 0%;
     }
     .card-text-cont {
-        width: 80%;
+        width: 84%;
+    }
+    .card-text {
+        font-size: 1.1rem;
     }
 
   }
