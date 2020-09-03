@@ -3,6 +3,7 @@ import tomask from '../img/tomask.png'
 import guantrini from '../img/wantini.png'
 import puma from '../img/puma.png'
 import jabon from '../img/jabon.png'
+import conoce from '../img/conocealep.png'
 import '../styles/team.css'
 import {MDBBtn, MDBModal, MDBModalBody} from 'mdbreact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -27,7 +28,10 @@ toggle = nr => () => {
 render() {
   return (
     <div className="sectionTeam" id="team">
-        <h1 className="titleTeam">Conoce al Escuadrón Prevención</h1>
+        {/* <h1 className="titleTeam">Conoce al Escuadrón Prevención</h1> */}
+        <div className="container text-center">
+        <img src={conoce} className="img-fluid imgWhat" width="600" alt="...." />
+        </div>
         <div className="containerTeam d-flex flex-row justify-content-center align-self-center">
           <div className="d-flex flex-row flex-wrap justify-content-center align-item-center contEscuadron">
             <MDBBtn color="btn-primary-outline" onClick={this.toggle(2)}><img src={tomask} className="team tomask" alt="tomask" width="150" /></MDBBtn>

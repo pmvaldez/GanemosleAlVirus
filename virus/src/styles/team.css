@@ -87,6 +87,10 @@
     width: 100px;
 }
 
+.imgWhat{
+    width: 60%;
+}
+
 }
 @media /* (min-width:320px) and */ (max-width: 450px) {
     .btn {
