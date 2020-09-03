@@ -88,6 +88,22 @@
   font-weight: 400;
 }
 .btnModal{
+  background-color:transparent;
+  color:white;
+  width: 20%;
+  height: 40px;
+  margin-top:10px; 
+  border-radius: 50px;
+  border: none;
+  font-family: 'HelveticaRoman';
+  font-size: 1.7rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-bottom: -40px;
+} 
+.btnModalLevel4{
   background-color:#662499;
   color:white;
   width: 20%;
