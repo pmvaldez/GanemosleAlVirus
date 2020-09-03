@@ -31,8 +31,8 @@ import defeat3 from '../img/GAV_Personaje21.png';
         const purple = {backgroundColor: '#64259D',
             }
       return (
-        <MDBContainer>
-        <MDBNav className="navs-tabs mt-5" style={purple}>
+        <MDBContainer >
+        <MDBNav className="navs-tabs flex-row justify-content-center align-self-center" style={purple}>
           <MDBNavItem>
             <MDBNavLink link to="#" active={this.state.activeItem === "1"} onClick={this.toggle("1")} role="tab" >
               CORONAVIRUS
@@ -54,117 +54,147 @@ import defeat3 from '../img/GAV_Personaje21.png';
             </MDBNavLink>
           </MDBNavItem>
         </MDBNav>
+
         <MDBTabContent activeItem={this.state.activeItem} >
           <MDBTabPane tabId="1" role="tabpanel">
-            <h1 className="mt-2 titulo">
+            <div className="contTextC1">
+            <h1 className="mt-2 contenido-titulo">
               ¿QUE ES EL CORONAVIRUS?
             </h1>
             <br/>
-            <p className="text">
+            <p className="text d-flex flex-row justify-content-center align-self-center">
             El coronavirus es una enfermedad que afecta a las vás respiratorias.
             Este tipo de coronavirus es el más fuerte y puede ser peligroso si no se detecta pronto.  
             </p>
-            <div><img src={viru} width="300" alt=""/></div>
+            </div>
+            <div className="contImg d-flex flex-row justify-content-center align-self-center">
+            <div className="col-md-4 col-xs-8">
+              <img src={viru}
+              className="img-fluid virus1"              
+              alt=""
+              />
+              </div>
+              </div>
           </MDBTabPane>
+
           <MDBTabPane tabId="2" role="tabpanel">
-            <h1 className="mt-2 titulo">
+            <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">
+            <h1 className="mt-2 contenido-titulo">
             ¿Cuáles son los síntomas del coronavirus?
             </h1>
             <br/>
-            <div class="row">
-            <div className="col-xs- col-sm- col-md-2 col-lg-">
+            </div>
+
+            <div className="contImg d-flex flex-row justify-content-center align-self-center">
+            <div className="col-md-2">
                 <img
                   src={pumasick}
-                  className="puma"
-                  width="150"
+                  className="img-fluid pumas" 
+                  width="150"                 
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Fiebre alta</p>
+                <p className="text d-flex flex-row justify-content-center" >Fiebre alta</p>
             </div>
-            <div className="col-xs- col-sm- col-md-2 col-lg-">
+
+            <div className="col-md-2">
                 <img
                   src={pumasick2}
-                  className="puma"
+                  className="img-fluid pumas"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Tos seca y dificultades para respirar.</p>
+                <p className="text d-flex flex-row justify-content-center align-self-center" >Tos seca y dificultades para respirar.</p>
               </div>
-              <div className="col-xs- col-sm- col-md-2 col-lg-">
+              </div>
+              <div className="contImg d-flex flex-row justify-content-center align-self-center">
+              <div className="col-md-2">
                 <img
                   src={pumasick3}
-                  className="puma"
+                  className="img-fluid pumas"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Dolor de garganta y pecho.</p>
+                <p className="text d-flex flex-row justify-content-center align-self-center" >Dolor de garganta y pecho.</p>
             </div>
-            <div className="col-xs- col-sm- col-md-2 col-lg-">
+
+            <div className="col-md-2">
                 <img
                   src={pumasick4}
-                  className="puma"
+                  className="img-fluid pumas"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Dolor de cabeza y cansancio.</p>
+                <p className="text d-flex flex-row justify-content-center align-self-center" >Dolor de cabeza y cansancio.</p>
             </div>
-              </div>               
+            </div>
+                             
           </MDBTabPane>
+
           <MDBTabPane tabId="3" role="tabpanel">
-          <h1 className="mt-2 titulo">
+          <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">
+          <h1 className="mt-2 contenido-titulo">
               ¿Cómo se contagia el coronavirus?
           </h1>
             <br/>
-            <div class="row">
-            <div className="col-xs- col-sm- col-md-2 col-lg-">
+            </div>
+
+            <div class="contImg d-flex flex-row justify-content-center align-self-center">
+            <div className="col-md-2">
                 <img
                   src={contact}
-                  className="contact"
+                  className="img -fluid contact"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Por el contacto con personas enfermas.</p>
+                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Por el contacto con personas enfermas.</p>
             </div>
-            <div className="col-xs- col-sm- col-md-2 col-lg-">
+
+            <div className="col-md-2">
                 <img
                   src={contact2}
-                  className="contact"
+                  className="img-fluid contact"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Por tocar objetos sin desinfectar.</p>
+                <p className="text d-flex flex-row justify-content-center align-self-center " style={{fontWeight:'bold'}}>Por tocar objetos sin desinfectar.</p>
               </div>
-              <div className="col-xs- col-sm- col-md-2 col-lg-">
+              
+              <div className="col-md-2">
                 <img
                   src={contact3}
-                  className="contact"
+                  className="img-fluid contact d-flex flex-row justify-content-center align-self-center"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Dolor de garganta y pecho.</p>
-            </div>            
-              </div>               
+                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Dolor de garganta y pecho.</p>
+            </div>     
+            </div>       
+              
+                               
           </MDBTabPane>        
           <MDBTabPane tabId="4" role="tabpanel">
-          <h1 className="mt-2 titulo">
+          <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">  
+          <h1 className="mt-2 contenido-titulo">
            ¿Qué puedo hacer para derrotar al coronavirus?
           </h1>
             <br/>
-            <div class="row">
+            </div> 
+
+            <div className="contImg d-flex flex-row justify-content-center align-self-center">
             <div className="col-xs- col-sm- col-md-2 col-lg-">
                 <img
                   src={defeat}
@@ -174,19 +204,21 @@ import defeat3 from '../img/GAV_Personaje21.png';
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Lavarme las manos con frecuencia.</p>
+                <p className="text">Lavarme las manos con frecuencia.</p>
             </div>
+
             <div className="col-xs- col-sm- col-md-2 col-lg-">
                 <img
                   src={defeat2}
-                  className="hootielav"
+                  className="defeat"
                   width="150"
                   alt=""
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Toser y estornudar cubriéndome la boca con un pañuelo.</p>
+                <p className="text">Toser y estornudar cubriéndome la boca con un pañuelo.</p>
               </div>
+
               <div className="col-xs- col-sm- col-md-2 col-lg-">
                 <img
                   src={defeat3}
@@ -196,7 +228,7 @@ import defeat3 from '../img/GAV_Personaje21.png';
                 />
                 <br/>
                 <br/>
-                <p className="text" style={{fontWeight:'bold'}}>Evitar el contacto con personas enfermas. 
+                <p className="text">Evitar el contacto con personas enfermas. 
                 Utilizar mascarrilla.</p>
             </div>            
               </div>               

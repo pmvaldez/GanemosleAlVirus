@@ -1,6 +1,5 @@
 import React, { Fragment } from "react"
 import "../styles/levelOne.css";
-//import ProgressNav from './ProgressNav'
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
@@ -26,7 +25,7 @@ const levelOne2 = () => {
               </div>
               <ProgressBar>
                 <ProgressBar animated  striped variant="success" now={now} key={1} />
-                <ProgressBar variant="info" now={75} key={2} />
+                <ProgressBar variant="info" now={25} key={2} />
               </ProgressBar>  
               <div>
               <img src={corona} width="50px" alt=""/>

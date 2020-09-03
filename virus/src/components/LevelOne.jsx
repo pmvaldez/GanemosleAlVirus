@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import "../styles/levelOne.css";
-/*  import ProgressNav from './ProgressNav'  */
 import Footer from './Footer'
 import adelante from '../img/BotonDerecha.png';
 import atras from '../img/BotonIzquierd.png';
@@ -13,16 +12,16 @@ import '../styles/progressbar.css';
 import logoGAV from '../img/GAV_logo.png';
 
 const LevelOne = () => {
-  const [show, setShow] = React.useState(true);
-  const [name, setDatos] = React.useState('')
+  const [show, setShow] = React.useState(false);
+  const [user, setUser] = React.useState('')
   
   const handleClose = () => setShow(false);
 
-  const handleInputChange = (event) => {  
-    const usuario= event.target.value
-    setDatos(usuario)
+  const handleInputChange = (event) => { 
+      event.preventDefault()
+      setUser(event.target.value)
   }
-
+console.log('nombre',user)
   const now = 25;
 
   return (
@@ -46,7 +45,7 @@ const LevelOne = () => {
           </div>
           <div className="container text-center mt-4 mb-4">
             <div className="p-4 whitebox">
-              <LevelOneC1 name={name}/>
+              <LevelOneC1 name={user}/>
             </div>
           </div>
           <div className="containernextButton">
@@ -66,7 +65,10 @@ const LevelOne = () => {
         <Modal.Header closeButton className="modalName">
           <Modal.Title>Holiwis</Modal.Title>
         </Modal.Header >
-        <Modal.Body className="modalName">Ingresa tu nombre: <input type="text" placeholder="Nombre" className="form-control" onChange={handleInputChange} name="nombre"></input>
+        <Modal.Body className="modalName">Ingresa tu nombre: 
+        <form onSubmit={handleInputChange}>
+        <input type="text" placeholder="Nombre" className="form-control" onChange={ e => setUser(e.target.value) } value={user}></input>
+        </form>
         </Modal.Body>
         <Modal.Footer className="modalName">
           <button variant="primary" onChange={handleInputChange} onClick={handleClose}>
