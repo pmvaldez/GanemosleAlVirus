@@ -15,7 +15,7 @@ import { Modal } from 'react-bootstrap';
 
 const LevelOne4 = () => {
  /*  console.log('diploma',props.name) */
- const [show, setShow] = React.useState(true);
+ const [show, setShow] = React.useState(false);
  const [user, setUser] = React.useState('')
  
  const handleClose = () => setShow(false);
@@ -31,7 +31,7 @@ const LevelOne4 = () => {
     <Fragment> 
       <div className="d-flex backgroundimg">
         <div className="section-mod1-general">    
-        <div className="prog-bar-content d-flex pl-4 flex-wrap">
+        <div className="prog-bar-content mt-0 d-flex pl-4 flex-wrap">
             <div className="processBar">
               <div >
               <img src={covid} width="50px" alt=""/>
@@ -46,30 +46,27 @@ const LevelOne4 = () => {
           </div>
             <div> <img src={logoGAV} className="logoGame" alt="..." /></div>
           </div>
-          <div className="container text-center mt-4 mb-4">
-             <div className="p-4 whitebox" >
-             <button className="btn btnModal " onClick={handleOpen}>
-           Cambiar Nombre
-          </button>
 
-          <div className="alert alert-primary diploma p-5">
-
-          <img src={ribbon} className="ribbon" width="30" alt="..." />
-          <h1 className="diplo-title">Diploma</h1>
-
-        
-                  <h2 className="diplo-title1">Se otorga el presente certificado a:</h2>
+          <div className="contGeneralD text-center mt-4 mb-4">
+              <div className="alert alert-primary diploma p-5">
+                <img src={ribbon} className="ribbon" width="30" alt="..." />
+                <h1 className="diplo-title">Diploma</h1>
+                <h2 className="diplo-title1">Se otorga el presente certificado a:</h2>
+                <div className="contNameDiplo">
                   <h2 className="diplo-nombre">{user}</h2>
-                  <h2 className="diplo-title1">Por haber obtenido la primera corona en el Módulo 1.</h2>
-
-                  <img src={escuadrondiplo} className="img-fluid escuadronprev" width="200" alt="..." />
-  </div>
-
-
-                  
-                  <img src={covid4} className="logoGame" alt="..." />
                 </div>
+                <h2 className="diplo-title1">Por haber obtenido la primera corona en el Módulo 1.</h2>
+                <img src={escuadrondiplo} className="img-fluid escuadronprev" width="200" alt="..." />
+              </div>
+              <div className="p-4 whitebox-4" >
+                <img src={corona} className="coronaM1" alt="..." />
+                <button className="btnName " onClick={handleOpen}>Cambiar Nombre</button>
+                <img src={covid4} className="covidPurple" alt="..." />
+                  
+                 
+              </div>
           </div>
+
           <div className="containernextButton">
             <div>
             <a href="/levelOne-3"><img src={atras} alt="" className="btnNext" /></a>
@@ -95,8 +92,8 @@ const LevelOne4 = () => {
             <input type="text" placeholder="Nombre" className="form-control" onChange={ e => setUser(e.target.value) } value={user}></input>
           </form>
         </div>
-        <button className="btn btnModal " onChange={handleInputChange} onClick={handleClose}>
-            Guardar
+        <button className="btnModal " onChange={handleInputChange} onClick={handleClose}>
+            GUARDAR
           </button>
         </Modal.Body>
       </Modal>
