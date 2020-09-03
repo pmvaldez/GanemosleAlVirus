@@ -1,7 +1,14 @@
-.sectionDownload{
+/* .sectionDownload{
     background-color: #F4F4FF; 
     width: 100%;
     height: 100vh;
     padding: 9rem 0 10rem 0;
     color:black
+} */
+
+.logoGames {
+    float: right;
+    width: 200px;
+    margin-top: 1rem;
+    margin-left: 83rem;
 }
