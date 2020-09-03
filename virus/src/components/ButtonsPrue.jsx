@@ -19,7 +19,7 @@ const ButtonsPrue = () => {
                 >           
             <img src={mod2}  alt='wantini' width='55'/>
             </Link>
-            <Link href="/levelThree"
+            <Link href="/"
                 styles={{backgroundColor: '#FF508C', color: 'white',  width:'80px', height:'80px',margin: '10px'}}
                 >
                 <img src={mod3}  alt='tomask' width='58'/>

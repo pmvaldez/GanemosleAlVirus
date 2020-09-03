@@ -16,11 +16,11 @@ const ParaTutores = () => {
     <div className="episode__content">
       <div className="title">Inicio</div>
       <div className="story">
-        <p>En esta sección puedes encontrar los contenidos que los niños aprenderán por etapa.</p>
+        <p>En esta sección puedes encontrar los contenidos que l@s niñ@s aprenderán por etapa.</p>
         <p>Ganémosle al Virus es una plataforma que forma parte de un programa de capacitación y apoyo para trabajar la prevención y autocuidado en niñas y niños durante la contingencia COVID-19,
         donde se les permite a l@s niñ@s aprender del virus mientras avanzan por las etapas de los siguientes 3 módulos.</p>
         <p>Los juegos incluidos en los módulos tienen sus propios detractores, como el personaje del coronavirus y el tiempo, y recompensas, es decir, puntos. </p>
-        <p>El material informativo en los módulos contará con un lenguaje adecuado para niños de 7 años en adelante, y dará recomendaciones y ejemplos con elementos conocidos y accesibles por ellos.</p>
+        <p>El material informativo en los módulos contará con un lenguaje adecuado para niñ@s de 7 años en adelante, y dará recomendaciones y ejemplos con elementos conocidos y accesibles por ellos.</p>
       </div>
     </div>
   </article>

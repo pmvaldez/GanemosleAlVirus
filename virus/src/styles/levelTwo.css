@@ -1,7 +1,197 @@
-.sectionLeveltwo {
-    background-color: #ddc5f9;
+@font-face {
+    font-family: 'RoundedElegance';
+    src: local('RoundedElegance'), url('../fonts/Rounded_Elegance.ttf') format('truetype');
+  
+    font-family: 'HelveticaRoman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+  }
+  .whitebox{
     width: 100%;
-    height: 100vh;
-    padding: 9rem 0 10rem 0;
-}
+    height: 72vh;
+    background-color: #ffffff;
+    border-radius: 32px 32px 32px 32px;
+    -moz-border-radius: 32px 32px 32px 32px;
+    -webkit-border-radius: 32px 32px 32px 32px;
+    border: 0px solid #000000;
+    -webkit-box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+    -moz-box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+    box-shadow: 17px 17px 31px 4px rgba(0,0,0,0.26);
+  }
 
+  
+  .hootieilus {
+      float: left;
+  }
+  
+  .containernextButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    top: 45%;
+  }
+  .btnNext{      
+    width: 100px;
+    height: 100px;    
+  } 
+          
+  .backgroundimg {
+     background: url("../img/fondo2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 92.3vh;;
+  }
+  .progress {
+    height: 2rem !important;
+    border-radius: 20.5rem !important;
+    width:95%;
+  }
+  
+  .infoimg{
+    width: 80%;
+    height: 474px;
+    margin-top: -23px;
+  }
+  .textModal{
+    font-family: 'HelveticaRoman';
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .btnModal{
+    background-color:transparent;
+    border-radius: 50px;
+    font-family: 'HelveticaRoman';
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: -40px;
+  }
+  
+  .coronaW{
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+  .processBar{
+    width: 75%;
+    margin-top: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  .logoGame{
+    float: right;
+    width: 200px;
+    margin-top: 1rem;
+    margin-left: 3rem;
+  
+  }
+  .hootieC1{
+    width: 80%;
+    margin-top: 55px;
+    margin-left: 35px;
+  }
+  /*LevelOne-C1*/
+  .contC1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+  }
+  .contHC1{
+    width: 30%;
+  }
+  .contTextC1{
+    margin-top: 8%;
+    width: 70%;
+    padding: 5px;
+    margin-left:5px;
+  }
+  
+  .contenido-titulo {
+    font-family: 'RoundedElegance', sans-serif;
+    color: #662499;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contenido-texto {
+    font-family: 'HelveticaRoman';
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+  }
+  .textwinner{
+    font-size: 1.8rem !important;
+  }
+  
+  .diploma {
+    background-color: #f4f4ff !important;
+    width: 80%;
+    height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      outline: 8px solid #ddc5f9;
+          outline-offset: -30px;
+  }
+  
+  .diplo-title {
+    font-family: 'RoundedElegance';
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 1.5rem;
+    color: #662499;
+    margin-bottom: 30px;
+  }
+  
+  .diplo-nombre {
+    font-family: 'RoundedElegance';
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: #662499;
+  }
+  
+  .diplo-title1{
+    font-family: 'HelveticaRoman';
+    font-size: 1.4rem;
+    color: #292c30;
+  }
+  
+  .ribbon {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 375px) {
+    .fab-container {
+      top: 13em;
+      z-index: 1;
+      right: 0vh;
+      }
+      .contEscuadron {
+        margin-top: -4px;
+      }
+      .jabon {
+        width: 100px;
+        margin-left: -34px;
+      }
+      .prog-bar-content {
+        height: 23vh !important;
+    }
+    .logoGame {
+      margin-top: 10px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .hootieC1{
+      width: 88px;
+      margin-top: 300% !important;
+      margin-left: -217px;
+    }
+  }

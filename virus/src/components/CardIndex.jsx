@@ -12,7 +12,7 @@ const CardIndex = () => {
           <p className="card-text">
             Ganémosle al Virus es una plataforma informativa y educativa que
             funciona como herramienta para que padres y tutores puedan enseñar a
-            los niños bajo su cuidado a entender qué está sucediendo en la
+            los niñ@s bajo su cuidado a entender qué está sucediendo en la
             actualidad en el contexto de la pandemia del COVID-19 y dar técnicas
             de autocuidado para poder hacerle frente al virus.
           </p>

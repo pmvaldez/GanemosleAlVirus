@@ -1,11 +1,16 @@
-/* .sectionDownload{
-    background-color: #F4F4FF; 
+ .sectionDownload{
     width: 100%;
     height: 100vh;
     padding: 9rem 0 10rem 0;
     color:black
-} */
-
+} 
+@font-face {
+    font-family: 'RoundedElegance';
+    src: local('RoundedElegance'), url('../fonts/Rounded_Elegance.ttf') format('truetype');
+  
+    font-family: 'HelveticaRoman';
+    src: url('../fonts/HelveticaNeueLTStd-Roman.otf');
+  }
 .logoGames {
     float: right;
     width: 200px;
