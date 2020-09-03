@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink } from "mdbreact";
-import "../styles/levelOne.css";
 import '../styles/tabs.css';
 import viru from '../img/virusataque.png';
 import pumasick from '../img/GAV_Personaje27.png';
@@ -10,7 +9,7 @@ import pumasick4 from '../img/GAV_Personaje29.png';
 import contact from '../img/covid.png';
 import contact2 from '../img/GAV_Personaje34.png';
 import contact3 from '../img/bolsahootie-removebg-preview.png';
-import defeat from '../img/gavhootie.png';
+import defeat from '../img/pollolavado.png';
 import defeat2 from '../img/GAV_Personaje09.png';
 import defeat3 from '../img/GAV_Personaje21.png';
 
@@ -57,13 +56,13 @@ import defeat3 from '../img/GAV_Personaje21.png';
 
         <MDBTabContent activeItem={this.state.activeItem} >
           <MDBTabPane tabId="1" role="tabpanel">
-            <div className="contTextC1">
+            <div>
             <h1 className="mt-2 contenido-titulo">
               ¿QUE ES EL CORONAVIRUS?
             </h1>
             <br/>
             <p className="text d-flex flex-row justify-content-center align-self-center">
-            El coronavirus es una enfermedad que afecta a las vás respiratorias.
+            El coronavirus es una enfermedad que afecta a las vías respiratorias.
             Este tipo de coronavirus es el más fuerte y puede ser peligroso si no se detecta pronto.  
             </p>
             </div>
@@ -78,7 +77,7 @@ import defeat3 from '../img/GAV_Personaje21.png';
           </MDBTabPane>
 
           <MDBTabPane tabId="2" role="tabpanel">
-            <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">
+            <div className="d-flex flex-row justify-content-center align-self-center">
             <h1 className="mt-2 contenido-titulo">
             ¿Cuáles son los síntomas del coronavirus?
             </h1>
@@ -139,7 +138,7 @@ import defeat3 from '../img/GAV_Personaje21.png';
           </MDBTabPane>
 
           <MDBTabPane tabId="3" role="tabpanel">
-          <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">
+          <div className="d-flex flex-row justify-content-center align-self-center">
           <h1 className="mt-2 contenido-titulo">
               ¿Cómo se contagia el coronavirus?
           </h1>
@@ -156,7 +155,7 @@ import defeat3 from '../img/GAV_Personaje21.png';
                 />
                 <br/>
                 <br/>
-                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Por el contacto con personas enfermas.</p>
+                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Por el aire de la tos y de los estornudos.</p>
             </div>
 
             <div className="col-md-2">
@@ -168,7 +167,7 @@ import defeat3 from '../img/GAV_Personaje21.png';
                 />
                 <br/>
                 <br/>
-                <p className="text d-flex flex-row justify-content-center align-self-center " style={{fontWeight:'bold'}}>Por tocar objetos sin desinfectar.</p>
+                <p className="text d-flex flex-row justify-content-center align-self-center " style={{fontWeight:'bold'}}>Por el contacto con personas enfermas.</p>
               </div>
               
               <div className="col-md-2">
@@ -180,14 +179,14 @@ import defeat3 from '../img/GAV_Personaje21.png';
                 />
                 <br/>
                 <br/>
-                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Dolor de garganta y pecho.</p>
+                <p className="text d-flex flex-row justify-content-center " style={{fontWeight:'bold'}}>Por tocar objetos sin desinfectar.</p>
             </div>     
             </div>       
               
                                
           </MDBTabPane>        
           <MDBTabPane tabId="4" role="tabpanel">
-          <div className="contTextC1 d-flex flex-row justify-content-center align-self-center">  
+          <div className="d-flex flex-row justify-content-center align-self-center">  
           <h1 className="mt-2 contenido-titulo">
            ¿Qué puedo hacer para derrotar al coronavirus?
           </h1>

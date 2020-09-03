@@ -15,7 +15,7 @@ import { Modal } from 'react-bootstrap';
 
 const LevelOne4 = () => {
  /*  console.log('diploma',props.name) */
- const [show, setShow] = React.useState(false);
+ const [show, setShow] = React.useState(true);
  const [user, setUser] = React.useState('')
  
  const handleClose = () => setShow(false);

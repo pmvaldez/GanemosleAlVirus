@@ -46,6 +46,9 @@ return (
                         <a href={tomas} download rel="noopener noreferrer" target="_blank" >
                         <MDBIcon icon="cloud-download-alt" size="3x" className="amber-text pr-3"/>
                         </a>    
+                        <a href="https://drive.google.com/drive/folders/1o85cB4D8tKzkkD5F27bkHFIeZTm8Pi3I?usp=sharing" download rel="noopener noreferrer" target="_blank" >
+                        <MDBIcon icon="cloud-download-alt" size="3x" className="amber-text pr-3"/>
+                        </a>   
                         </div>    
                 </div>
             </div>

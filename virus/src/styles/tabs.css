@@ -23,7 +23,6 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    
   }
   .virus1 {
     width: 100%;     
@@ -57,18 +56,18 @@
     .virus1{
       width: 130px;
     }
-    .pumas{
-        width: 100px !important;
-    }
     .contact{
-        width: 130px;
+        width: 50px;
+        margin-top: 35px;
+        margin-left: 0px;
+    
     }
     .defeat{
-        width: 100px;
+        width: 50px;
     }
     }
 
-    @media /* (min-width:320px) and */ (max-width: 450px) {      
+/*     @media  (max-width: 450px) {      
       .contImg{
           width: 100%;
           margin-top: 36px;
@@ -81,7 +80,10 @@
           width: 100px;
       }
       .pumas{
-          width: 100px;
+        width: 80%;
+        margin-top: 55px;
+        margin-left: 0px;
+    
       }
       .contact{
           width: 149px;
@@ -90,23 +92,24 @@
           width: 100px;
       }
   }
-  
+ */  
 
   /*Responsive Celular L*/
 @media (max-width: 425px) {    
  .navs-tabs{
+    width: 17rem !important;
   justify-content: center;
   align-items: center;
   margin-top: none;
   }  
   .contImg{
-    margin-top: 1px;
+    margin-top: -15px;
   }
   .titulo{
     top: -46px;
   }
   .contenido-titulo{
-    font-size: 28px;
+    font-size: 20px;
   }
   .virus1{
     width: 130px;
@@ -115,15 +118,28 @@
     align-items: center;
   }
   .pumas{
-    width: 80px;
+    width: 70px;
     margin-top: 0px;
     justify-content: center;
     align-items: center;
   }
-  .text{
-    font-size: 15px
+  .text {
+    font-size: 14px;
+    margin-top: -28px;
+    line-height: 1.1rem;
+}
+  .container {
+    width: 100% !important;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.defeat {
+    width: 50px;
+    margin-top: 32px;
+    margin-left: -50px;
+}
 
-  }
+
 }
 
   @media (min-width: 426px) and (max-width: 762px) {
@@ -137,13 +153,14 @@
       margin-top: 110px;
       margin-left: 44px;
     }       
-    .pumas {
+/*     .pumas {
       width: 50%;
       margin-top: 10px;    
-    }  
+    }   */
     .contact{
       width: 50%;
-      margin-top: 10px;
+      margin-top: 35px;
+      margin-left: 0px;  
   }
     .defeat{
       width: 50%;
