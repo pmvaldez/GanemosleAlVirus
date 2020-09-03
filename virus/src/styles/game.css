@@ -1,11 +1,22 @@
 .img {
     background-image: url('../img/GAV_Personaje31.png');
 }
+.game {
+    width: 1000px;
+    height: 750px;
+}
 
 
-@media (max-width: 425px) {
+@media (min-width: 360px) {
     .game {
-        width: 385!important;
-        height: 302!important;
+        width: 320px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 763px) {
+    .game {
+        width: 500px;
+        height: 400px;
     }
 }
