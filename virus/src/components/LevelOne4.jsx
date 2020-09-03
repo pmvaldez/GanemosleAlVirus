@@ -92,7 +92,7 @@ const LevelOne4 = () => {
             <input type="text" placeholder="Nombre" className="form-control" onChange={ e => setUser(e.target.value) } value={user}></input>
           </form>
         </div>
-        <button className="btnModal " onChange={handleInputChange} onClick={handleClose}>
+        <button className="btnModalLevel4" onChange={handleInputChange} onClick={handleClose}>
             GUARDAR
           </button>
         </Modal.Body>
