@@ -70,18 +70,6 @@
   margin-top: -23px;
 }
 
-.contenido-titulo {
-  font-family: 'RoundedElegance', sans-serif;
-  color: #662499;
-  font-size: 2.6rem;
-}
-
-.contenido-texto {
-  font-family: 'HelveticaRoman';
-  font-size: 1.1rem;
-  line-height: 2rem;
-}
-
 .modalName{
   background: url("../img/fondo2.png") no-repeat center center fixed;
   background-size:100% 100%;
@@ -132,8 +120,39 @@
   margin-top: 55px;
   margin-left: 35px;
 }
+/*LevelOne-C1*/
+.contC1{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+}
+.contHC1{
+  width: 30%;
+}
+.contTextC1{
+  margin-top: 8%;
+  width: 70%;
+  padding: 5px;
+  margin-left:5px;
+}
 
-@media (max-width: 375px) {
+.contenido-titulo {
+  font-family: 'RoundedElegance', sans-serif;
+  color: #662499;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-texto {
+  font-family: 'HelveticaRoman';
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+.textwinner{
+  font-size: 1.8rem !important;
+}
+
+@media (min-width: 360px) and (max-width: 424px){
   .fab-container {
     top: 15em;
     z-index: 1;
@@ -146,6 +165,19 @@
       width: 100px;
       margin-left: -34px;
     }
+    .prog-bar-content {
+      height: 23vh !important;
+  }
+  .logoGame {
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .hootieC1{
+    width: 88px;
+    margin-top: 300% !important;
+    margin-left: -217px;
+  }
 }
 /*Responsive Celular L*/
 @media (max-width: 425px) {
@@ -162,8 +194,8 @@
           order: 1;
           float: none;
           margin-top: 10px;
-          margin-right: 20px;
-          margin-left: 100px;
+          margin-right: 0px;
+          margin-left: 0px;
         }
         .processBar{
           order:2;
@@ -175,7 +207,7 @@
           align-items: center;
         }
         .prog-bar-content {
-          height: 19vh !important;
+          height: 24vh !important;
         }
         .backgroundimg{
           height:94vh;
@@ -187,30 +219,54 @@
             background-color: rgba(0, 0, 0, 0.3);
             background: rgba(0, 0, 0, 0.3);
             color: rgba(0, 0, 0, 0.3);
+            justify-content: center;
         }
-        .hootieC1{
-          width: 130px;
-          margin-top: 0px;
+
+        .contC1{
+          width: 100%;
+          justify-content: center;
+          margin-top: -46px;
         }
         .contTextC1{
-          top: -46px;
+          top: -60px;
+          width: 100%;
+          order: 1;
+        }
+        .contHC1{
+          margin:0px;
+          padding: 0px;
+          margin-left: 0px;
+          order:2;
+          position: absolute;
         }
         .contenido-titulo{
-          font-size: 28px;
+          font-size: 25px;
+          padding: 0px;
         }
         .btnNext{      
           width: 50px;
           height: 50px;    
         } 
         .containernextButton {
-          top: 34%;
+          top: 4%;
+        }
+        .contenido-texto{
+          font-size: 1rem;
+        }
+        .textwinner{
+          font-size: 1.1rem;
+          margin-left: 70px;
+        }
+        .hootieC1{
+          margin-left: -217px !important;
+          margin-top: 250%;
         }
 }
 
 @media (min-width: 426px) and (max-width: 762px) {
   .hootieC1{
     width: 50%;
-    margin-top: 110px;
+    margin-top: 139px;
     margin-left: 44px;
   }
   .logoGame{
@@ -226,6 +282,10 @@
     height: 19vh;
     justify-content: center;
     align-items: center;
+  }
+  .contC1{
+    margin-top: -55px;
+    width: 90%;
   }
 }
 
@@ -250,6 +310,23 @@
 .logofooter {
   width: 81%;
 }
+.btnNext {
+  width: 80px;
+  height: 80px;
+}
+.contC1{
+  margin-top: -42px;
+  margin-left: 20px;
+}
+.contenido-texto{
+  margin-left: 10%;
+}
+}
+@media (min-width: 360px) {
+.logofooter {
+  width: 91%;
+}
+
 }
  @media (min-width: 1024px) {
   .backgroundimg {

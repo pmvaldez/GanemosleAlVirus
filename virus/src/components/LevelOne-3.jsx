@@ -11,7 +11,7 @@ import '../styles/progressbar.css';
 import logoGAV from '../img/GAV_logo.png';
 
 const levelOne3 = () => {
-  const now = 100;
+  const now = 90;
   return (
     <Fragment> 
     <div className="d-flex backgroundimg">
@@ -32,9 +32,10 @@ const levelOne3 = () => {
             <div> <img src={logoGAV} className="logoGame" alt="..." /></div>
           </div>
         <div className="container text-center mt-4 mb-4">
-          <div className="p-4 whitebox3">
-            <Game />
-          </div>
+         {/*  <div className="p-4 whitebox3">
+           
+          </div> */}
+          <Game />
         </div>
         <div className="containernextButton">
           <div>
